@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="00fb864f-9f5c-4268-a0cd-3acbddc8d5ea" name="Добавление штрафа" linkedPackageId="4fe7d731-47c3-4b75-b2d4-02be633e18f3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="0fc128d8-e502-421a-808b-a58f1c46a399" name="Добавление штрафа" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="a429071e-e3f7-4ea6-8bcf-d761ccf93796" />
+        <nodes>
+          <initialNode Id="cc418229-636b-4561-a61d-67e18f92e97c" name="Initial1" isLeaf="false">
+            <elementDefinition Id="ca50cd37-1996-4839-846b-868d88db9b29" />
+            <flowNodeTargets>
+              <controlFlow Id="a5aa8ddf-bb07-465d-ba80-316cc8b06543" isLeaf="false">
+                <opaqueActionMoniker Id="a8edbb0c-17f7-4c8c-aff1-f4b9e63938e9" LastKnownName="Форма добавления штрафа" />
+                <elementDefinition Id="f3520166-cf20-4f55-8a4f-28518f3d317d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="a8edbb0c-17f7-4c8c-aff1-f4b9e63938e9" name="Форма добавления штрафа" isLeaf="false">
+            <elementDefinition Id="0f303cb1-475c-4a16-ae17-eceae13ac033" />
+            <flowNodeTargets>
+              <controlFlow Id="bbda4aba-f92f-46a8-ac9c-3610664b6e2b" isLeaf="false">
+                <opaqueActionMoniker Id="41b2b706-d1aa-4fdd-b307-feb62a012aa7" LastKnownName="Заполнение полей " />
+                <elementDefinition Id="bd12cd3c-19d0-4ffe-a330-d267f65a14b3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="41b2b706-d1aa-4fdd-b307-feb62a012aa7" name="Заполнение полей " isLeaf="false">
+            <elementDefinition Id="99b1a8b3-50b6-460a-a44d-c37038e671fd" />
+            <flowNodeTargets>
+              <controlFlow Id="c50cf68a-0574-43f3-8101-711f5636a69d" isLeaf="false">
+                <opaqueActionMoniker Id="01a4a2d0-871f-432c-a2ec-ad452a094996" LastKnownName="Выбор даты" />
+                <elementDefinition Id="849d3950-54b6-41d3-865a-46c0eacca8b9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="01a4a2d0-871f-432c-a2ec-ad452a094996" name="Выбор даты" isLeaf="false">
+            <elementDefinition Id="e75a0fef-0eb7-409a-a469-28b8da1efc81" />
+            <flowNodeTargets>
+              <controlFlow Id="5c1bb929-88dd-46b1-92e3-38a0d30f3fac" isLeaf="false">
+                <decisionNodeMoniker Id="26780335-1b14-46ba-8539-b90baac0a034" LastKnownName="Decision1" />
+                <elementDefinition Id="08464ee7-3def-4f0d-a417-085910e8041d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="26780335-1b14-46ba-8539-b90baac0a034" name="Decision1" isLeaf="false">
+            <elementDefinition Id="d6703783-b5c9-426b-9a18-3a99caddbc1f" />
+            <flowNodeTargets>
+              <controlFlow Id="219aff69-c9df-41a9-bbd6-faa92154d953" guard="ОК" isLeaf="false">
+                <opaqueActionMoniker Id="dc2b647c-93dd-4fde-bd7f-ac4a47693fd3" LastKnownName="Добавление нового  штрафа" />
+                <elementDefinition Id="543e0493-19b6-4ded-bc26-20f8a53965ed" />
+              </controlFlow>
+              <controlFlow Id="f72b5be8-1830-41f8-9b8b-fb15efb30ef4" guard="Отмена" isLeaf="false">
+                <activityFinalNodeMoniker Id="852b2846-8ee3-485e-bdc0-c7b3ee88d6e1" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="94acd541-ca45-443f-bf57-eacc4a467132" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="dc2b647c-93dd-4fde-bd7f-ac4a47693fd3" name="Добавление нового  штрафа" isLeaf="false">
+            <elementDefinition Id="cd46b59a-4b71-4976-9751-b9ec80109a44" />
+            <flowNodeTargets>
+              <controlFlow Id="6710d070-a83c-471e-898b-a3cfc62464ae" isLeaf="false">
+                <activityFinalNodeMoniker Id="852b2846-8ee3-485e-bdc0-c7b3ee88d6e1" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="1216be3e-9958-4d1d-8e11-76513a3e1de4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="852b2846-8ee3-485e-bdc0-c7b3ee88d6e1" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="f5f75edd-0e77-417d-acc0-98132a746f09" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="4fe7d731-47c3-4b75-b2d4-02be633e18f3" name="ЛАБ5">
+    <elementDefinition Id="8880c9fe-d53c-4af7-84a2-6e80dac3a103" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ddc96c3a-287c-4ab0-8ec8-60d98f919164">
+        <profileInstance Id="e0aa9f23-200e-4359-b896-d60643a06376" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3cec6b26-45df-4209-adcd-e61863baae15">
+        <profileInstance Id="35ca48be-c87b-4331-9d65-a3b5de02b9a1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

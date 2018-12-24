@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="c4343964-8e94-4eac-b828-6541df362c47" name="Редактирование проката" linkedPackageId="14468141-28ec-400c-ba15-2a2328b29128" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="5161bdfd-1616-46dc-862b-be12e388a744">
+      <elementDefinition Id="f3121117-4dfd-46ad-bb1e-d1cd476a990e" />
+      <body>Подтверждение</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="e67f4a15-27ad-4b9b-bf5b-d10d8b26254a" name="Редактирование проката" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="a1e544ba-8886-4c7c-8c58-9288153cbd1c" />
+        <nodes>
+          <initialNode Id="abd799a2-de08-4fd1-bf97-f4a6be0705e0" name="Initial1" isLeaf="false">
+            <elementDefinition Id="17ae2a3b-8335-4371-bedc-67738ae7998d" />
+            <flowNodeTargets>
+              <controlFlow Id="6c9ca99b-f57c-4a11-b00e-bee629b2b810" isLeaf="false">
+                <opaqueActionMoniker Id="2a717121-aa58-4733-a8fc-0c79464cda1c" LastKnownName="Открытые карточки прокат" />
+                <elementDefinition Id="d4224c62-d77a-4946-9996-d137d2fcff20" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="2a717121-aa58-4733-a8fc-0c79464cda1c" name="Открытые карточки прокат" isLeaf="false">
+            <elementDefinition Id="95607f46-b5d5-411e-b09c-49eda3c7a7ae" />
+            <flowNodeTargets>
+              <controlFlow Id="f991d9b9-52a3-4797-86c7-f23ad146f249" isLeaf="false">
+                <opaqueActionMoniker Id="0e1f9c2e-fe8b-43ff-8b4f-4f1c54c9aa5e" LastKnownName="Открытие карточки редактирования проката" />
+                <elementDefinition Id="80bbf0e8-36ab-4d8d-ab45-dbfb3a0af70f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3716607d-a028-4b06-b5f6-aeb797039a9c" name="Изменение данных о прокате" isLeaf="false">
+            <elementDefinition Id="4e0481b9-6dad-494d-b174-87f75b91063b" />
+            <flowNodeTargets>
+              <controlFlow Id="e11840e9-3253-481f-8e97-123e2392fc6a" isLeaf="false">
+                <decisionNodeMoniker Id="15941c63-3482-4347-87bf-648f145296c5" LastKnownName="Decision1" />
+                <elementDefinition Id="e960d882-dbba-46fa-8fc2-ecffe72f8946" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="15941c63-3482-4347-87bf-648f145296c5" name="Decision1" isLeaf="false">
+            <elementDefinition Id="3bc1436b-918a-442f-83ba-85094f109555" />
+            <flowNodeTargets>
+              <controlFlow Id="e1de03a7-fffb-4f42-8331-3b6d91fa7195" guard="Отмена" isLeaf="false">
+                <activityFinalNodeMoniker Id="e79ba364-a882-4060-8903-185fa3de7c4c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a44e57ec-703f-4833-83d1-6bf60dee4a50" />
+              </controlFlow>
+              <controlFlow Id="38653adc-1fed-4f49-b0ec-d2716f405cd8" guard="Ок" isLeaf="false">
+                <opaqueActionMoniker Id="9b8bf2c0-d977-4360-8660-7dcdcb71661c" LastKnownName="Сохранение данных" />
+                <elementDefinition Id="1aa9c69d-a7bd-4f0b-9b21-3e56a31deec5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="9b8bf2c0-d977-4360-8660-7dcdcb71661c" name="Сохранение данных" isLeaf="false">
+            <elementDefinition Id="c1a1b914-b072-4ee3-b312-e5e87c50f064" />
+            <flowNodeTargets>
+              <controlFlow Id="a03f2703-bdbb-47ce-b427-56953287698e" isLeaf="false">
+                <activityFinalNodeMoniker Id="e79ba364-a882-4060-8903-185fa3de7c4c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c2048176-56fb-4f4a-b165-40a9c59d0691" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="e79ba364-a882-4060-8903-185fa3de7c4c" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="87043b80-2538-46d7-8ba9-5d98a8541ea7" />
+          </activityFinalNode>
+          <opaqueAction Id="0e1f9c2e-fe8b-43ff-8b4f-4f1c54c9aa5e" name="Открытие карточки редактирования проката" isLeaf="false">
+            <elementDefinition Id="d47408df-e568-4ddf-88ab-4b4fc04596e4" />
+            <flowNodeTargets>
+              <controlFlow Id="ec1ad61a-cace-4a78-b2e9-e3f9a578e2f8" isLeaf="false">
+                <opaqueActionMoniker Id="3716607d-a028-4b06-b5f6-aeb797039a9c" LastKnownName="Изменение данных о прокате" />
+                <elementDefinition Id="24b5d340-82e8-41ae-bceb-2d420ed08e24" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="14468141-28ec-400c-ba15-2a2328b29128" name="ЛАБ5">
+    <elementDefinition Id="8880c9fe-d53c-4af7-84a2-6e80dac3a103" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f8485985-8ef6-4e9a-b2ff-21354a4ecaaf">
+        <profileInstance Id="111d39cd-919a-4d3a-83e7-f3a41efe87a4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c8c4b05d-6e6e-4348-a547-084287298c47">
+        <profileInstance Id="954f13b0-abc8-4791-aff0-df797ef4fb8c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

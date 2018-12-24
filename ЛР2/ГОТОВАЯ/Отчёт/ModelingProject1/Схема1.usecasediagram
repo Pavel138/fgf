@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0f189436-5df1-4e4e-a845-69613e71b7e8" name="Библиотека" linkedPackageId="41626fc7-bb26-4ec2-8c0d-119c9274dea7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e1dc197c-7d91-485b-afef-0471f7e42152" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5a2a428-b1ba-4742-99cc-01e0c50f1b89" />
+        <generalsInternal>
+          <generalization Id="22a44742-4f72-48d8-ab97-8584c7182f33" isSubstitutable="false">
+            <actorMoniker Id="3a506fb6-7556-4660-b392-76b2d2e2cd85" LastKnownName="Бухгалтер" />
+            <elementDefinition Id="a8a5264f-d760-49c1-89e3-aeb281904629" />
+          </generalization>
+          <generalization Id="53ffc236-f99a-4b09-a232-6df0bd469cb0" isSubstitutable="false">
+            <actorMoniker Id="e99fa12f-f23e-4b42-b75a-c89b47b441dd" LastKnownName="Библиотекарь" />
+            <elementDefinition Id="180aaf98-b75c-4389-a609-90987939e414" />
+          </generalization>
+          <generalization Id="cb5a0425-f3e2-4c71-a06b-c75041057d77" isSubstitutable="false">
+            <actorMoniker Id="33b3eb01-482e-4bcc-b848-1765a4fce209" LastKnownName="Читатель" />
+            <elementDefinition Id="2a4eb01b-d7b5-4546-a995-d1e93cec675f" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="35172007-5946-453d-9d34-661bb937040a" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Просмотр списка работников" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fcd8bb5d-f5b4-48b1-9a0c-b7ecdb54804a" LastKnownName="Просмотр списка работников" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6cbe20f-9b00-4c63-96ce-f12c175454a7" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="efbf5a31-1541-4bb7-8c35-e66974ff11e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7471d95f-e1ee-40e7-bdb8-40fc6bd05016" name="Просмотр списка работников" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aec13dce-04fa-4cea-8141-2bf2f4922cdd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea296cc4-91f7-4f64-84a6-e8cc7c661b9e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3a506fb6-7556-4660-b392-76b2d2e2cd85" name="Бухгалтер" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="146b4adb-4cbd-42d4-b1fe-619c6f850a0a" />
+        <targetEnds>
+          <association Id="63bde8f0-8ffa-44f4-80e9-d35545c34c2c" isDerived="false" sourceEndRoleName="Бухгалтер" targetEndRoleName="Просмотр списка тарифов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8b783598-2213-4f55-9c20-fd239b6d269c" LastKnownName="Просмотр списка тарифов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="759fe3b5-885c-42f1-89c0-7ac2d522e28f" name="Бухгалтер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="eb65b2f4-2b89-4ebf-a18b-c04157e75c19" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81de6b0a-6409-4031-b9e2-39049dfa0467" name="Просмотр списка тарифов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="10861cb5-737d-4f04-9883-cee40f526fc0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9105053f-2678-4b48-b991-5b0d590a8312" />
+          </association>
+          <association Id="78e970af-7dc4-412d-91f9-40bda0f4bb92" isDerived="false" sourceEndRoleName="Бухгалтер" targetEndRoleName="Просмотр списка штрафов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ea6a4026-aa9f-4ca7-bfe8-334a49b46763" LastKnownName="Просмотр списка штрафов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb9e310c-abff-452f-9ebd-2dc1eb58041f" name="Бухгалтер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ca1a177-89cc-4952-9421-cd494c1d7e8f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a30a1fa-a5be-423d-940c-54a25a47bc3c" name="Просмотр списка штрафов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53a23c0a-3400-42f2-82fd-4896e3f71c63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1092fe1c-cf9f-4da7-95d6-56575527a9fe" />
+          </association>
+          <association Id="e0379aba-e030-46e9-ba4b-d87407f6afdd" isDerived="false" sourceEndRoleName="Бухгалтер" targetEndRoleName="Просмотр списка платежей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="657ad9aa-b47c-46a4-8cde-66d18aea64f8" LastKnownName="Просмотр списка платежей" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd30c60c-a7f3-4b18-b893-7add5623e84b" name="Бухгалтер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="89d6b31d-9ce5-4c01-bbf9-04717b9b4aab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8121a94e-8c25-4942-867e-f8e3e7639ba3" name="Просмотр списка платежей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ba0e0ac-fe9b-4922-9c5d-8e0b43fc28a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b8091b20-f307-4d83-ade3-eedfccd62d31" />
+          </association>
+          <association Id="330fd27b-20dd-4116-8288-1a6fccb0e845" isDerived="false" sourceEndRoleName="Бухгалтер" targetEndRoleName="Бухгалтер" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="3a506fb6-7556-4660-b392-76b2d2e2cd85" LastKnownName="Бухгалтер" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0cd7202-1ae4-46a4-9b56-0105a6796326" name="Бухгалтер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="42f88cfa-7430-4b83-9559-707bb9ef00bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="943f2eaa-9381-4b5f-ac1f-9a5991f6fe1b" name="Бухгалтер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d7ec1ad3-eff1-4752-8f28-0490b88ec6cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0afe68ac-8f19-46b4-8be2-85732c114ffe" />
+          </association>
+          <association Id="84a1d8f4-0bb4-470c-bca0-ad109a7da487" isDerived="false" sourceEndRoleName="Бухгалтер" targetEndRoleName="Просмотр списка прокатов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8a353f72-d308-424e-ab69-f8029eb939b5" LastKnownName="Просмотр списка прокатов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64988e56-6b03-4704-8ca2-f3136185223b" name="Бухгалтер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cf979242-223e-4d41-aa4f-7c187a83d8f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5fd67e44-f898-4ac5-8adf-e66183054e70" name="Просмотр списка прокатов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="398ddaa9-a119-4558-b5fc-4a799a302c97" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e864b6a8-b05e-4529-964c-f119aa90183c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e99fa12f-f23e-4b42-b75a-c89b47b441dd" name="Библиотекарь" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f8ca646-5bda-4dfe-83ce-347fa2356b83" />
+        <targetEnds>
+          <association Id="377b2387-2180-42a8-9cac-e2a54d60d92d" isDerived="false" sourceEndRoleName="Библиотекарь" targetEndRoleName="Просмотр списка клиентов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d8e0ca8a-c190-4df9-b799-62ef72f2e7c5" LastKnownName="Просмотр списка клиентов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6816f6cf-7963-41ed-854d-d9036b91c964" name="Библиотекарь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ff7d4b59-0f2b-43ba-a4ea-48b0674e98a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="077e22f8-96f3-4fc8-a015-2f721fbb13ad" name="Просмотр списка клиентов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="885992b2-c03f-4aae-a51c-324aa64fc476" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="26fef241-ce1d-45c9-a8b1-acbe4fce515a" />
+          </association>
+          <association Id="bcd44528-dcf1-42f6-91c9-029c82ccd0a8" isDerived="false" sourceEndRoleName="Библиотекарь" targetEndRoleName="Просмотр списка прокатов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8a353f72-d308-424e-ab69-f8029eb939b5" LastKnownName="Просмотр списка прокатов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a69b2db9-c156-4166-acf4-1dfb0a03a860" name="Библиотекарь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b483e9dc-a59d-4e2e-a647-1aa8b2b353bf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a27029d7-39de-48d8-8b6d-b3824707f327" name="Просмотр списка прокатов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8694495f-b1bf-4bbb-9bec-3a950061a235" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="29c0e8ca-585e-47b1-8ea5-557c3b03b586" />
+          </association>
+          <association Id="2d2cca46-d6e1-4474-9ded-1b37d589985a" isDerived="false" sourceEndRoleName="Библиотекарь" targetEndRoleName="Просмотр списка книг" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aad9d10e-090a-47e7-afbd-f3f79b6546bf" LastKnownName="Просмотр списка книг" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="47f8b75e-c58f-47d8-b23f-220a5e1a2d11" name="Библиотекарь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bb156d05-7014-46d8-b8e1-50a8f44def95" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb81cf95-5b20-40df-82ec-e618f6a683c8" name="Просмотр списка книг" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="63740bc2-a8d6-44c3-86be-3537c21491c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fa8a9579-e55c-4841-bed5-3da87192a58a" />
+          </association>
+          <association Id="5219a7d6-d6c2-46e5-8a6e-05469b6666e2" isDerived="false" sourceEndRoleName="Библиотекарь" targetEndRoleName="Просмотр списка авторов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a07352ba-899f-49d0-b80c-966da3553d30" LastKnownName="Просмотр списка авторов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa3f7642-d5d5-4eba-99f5-7b80c536aec3" name="Библиотекарь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9c56537b-d6e5-4ec4-a1fa-fa82a7cbd8d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="65621d43-7113-4f63-9d05-dfb242a6bef8" name="Просмотр списка авторов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="44908987-d494-4fac-9c6a-fce37a9221e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aadb8854-3f03-4dcc-8c77-9e5fbd9b7018" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="33b3eb01-482e-4bcc-b848-1765a4fce209" name="Читатель" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="98847ad1-5d25-4cf7-825b-f5a71f42f977" />
+        <targetEnds>
+          <association Id="77df20ee-2678-4661-bbc3-66000c0b74f1" isDerived="false" sourceEndRoleName="Читатель" targetEndRoleName="Просмотр списка книг" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aad9d10e-090a-47e7-afbd-f3f79b6546bf" LastKnownName="Просмотр списка книг" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bdddd820-0fd9-4dff-945c-97a27a9b9a09" name="Читатель" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9421def7-687a-41d7-b90f-705a90779c6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d06d039e-7703-4182-b6b9-38a49c50b5bd" name="Просмотр списка книг" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4d263bf4-b10b-49a9-ac59-d5b0548802eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="096e4995-380d-4d33-a071-6d5cbb3cd4d3" />
+          </association>
+          <association Id="3097296c-619a-4a0c-98b5-dfb3e759a573" isDerived="false" sourceEndRoleName="Читатель" targetEndRoleName="Просмотр списка тарифов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8b783598-2213-4f55-9c20-fd239b6d269c" LastKnownName="Просмотр списка тарифов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9fe2fd2c-0ba2-4066-b568-585a7d6aa956" name="Читатель" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bb40f98b-aaad-4bc3-b332-c3b542dabce1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0c6a5116-c2bc-4b16-a4f2-92be292c43ae" name="Просмотр списка тарифов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6d74370-7e5c-47eb-b2cb-313c619cab5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9b9261bd-7a42-44dc-9e18-80e5f33ad1ab" />
+          </association>
+          <association Id="03a20977-57f6-40b7-b9fe-14b512bb848d" isDerived="false" sourceEndRoleName="Читатель" targetEndRoleName="Просмотр списка штрафов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ea6a4026-aa9f-4ca7-bfe8-334a49b46763" LastKnownName="Просмотр списка штрафов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a8e0117-5b35-462e-9111-dbec782c6a5a" name="Читатель" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ef5cb278-2f44-48c1-a10c-4724f82d961e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a44edbd-05f7-49af-ba08-5d01fef91136" name="Просмотр списка штрафов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="499c602b-99e5-4906-b80e-7531c81b7e20" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb20a495-ed54-491a-b071-db11f89db727" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d8e0ca8a-c190-4df9-b799-62ef72f2e7c5" name="Просмотр списка клиентов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="059b7b93-831c-4be7-9de6-52fe00845c54" />
+        <extendedCases>
+          <extend Id="a03528e8-05ae-4adb-80c1-97e9eda0d9da">
+            <useCaseMoniker Id="62105f65-7455-41f9-8018-870a7c4eb7c2" LastKnownName="Добавить нового клиента" />
+            <elementDefinition Id="06fa9de6-f854-4337-af7d-7389e8b8283f" />
+          </extend>
+          <extend Id="e6e9a77a-b9c1-4058-9d4f-daf11a3f6448">
+            <useCaseMoniker Id="f221acff-b774-4d04-ba03-383422495064" LastKnownName="Удалить клиента" />
+            <elementDefinition Id="dd8579f3-a25b-4b62-905a-3a03871816ee" />
+          </extend>
+          <extend Id="bf3d90cf-f0b4-498f-b07c-b0686035ccc8">
+            <useCaseMoniker Id="d570b8fc-5c3b-405e-94c2-51ba88b41908" LastKnownName="Редактировать клиента" />
+            <elementDefinition Id="95056bea-86db-4168-bc85-9ee6637ebd76" />
+          </extend>
+          <extend Id="038bdc58-27f6-4aa1-b4f9-38c78e041206">
+            <useCaseMoniker Id="b211ee3e-6b16-4ace-bc10-149cc6c3095d" LastKnownName="Просмотр карточки клиента" />
+            <elementDefinition Id="9c5f6b9f-a56d-4013-8cde-3f09958cf0b9" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a353f72-d308-424e-ab69-f8029eb939b5" name="Просмотр списка прокатов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc850b48-c5e0-4510-b277-54df622f7db5" />
+        <extendedCases>
+          <extend Id="1008d0b1-2b6b-4508-a6de-08004c4b920e">
+            <useCaseMoniker Id="8b76e067-39eb-4e50-b25c-67cf60e31b4a" LastKnownName="Редактировать прокат" />
+            <elementDefinition Id="f001d124-119b-4aba-ba57-9aa56b40653a" />
+          </extend>
+          <extend Id="6aac2424-7356-40ab-b4fc-3ab47fe049cc">
+            <useCaseMoniker Id="251a0a15-d758-489c-a4d4-ca2ee1e669cc" LastKnownName="Удалить прокат" />
+            <elementDefinition Id="b249f46d-e818-4924-ab08-383624d4da00" />
+          </extend>
+          <extend Id="7c9b846a-5e3e-4a07-b1e2-3052d2df96d4">
+            <useCaseMoniker Id="90a890e5-0dfb-4e91-8640-ffb1fdb275c0" LastKnownName="Добавить новый прокат" />
+            <elementDefinition Id="6263a274-ac3d-421a-becf-5fae3e0623c3" />
+          </extend>
+          <extend Id="187ffed6-1865-4164-a0a1-17b3565b806f">
+            <useCaseMoniker Id="94d3acb2-1659-4836-981d-d117b1d6ecc6" LastKnownName="Просмотр карточки проката" />
+            <elementDefinition Id="90481c8b-693c-49ad-81cc-6e50f56d8043" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fcd8bb5d-f5b4-48b1-9a0c-b7ecdb54804a" name="Просмотр списка работников" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f45a46d8-ae15-4bbe-81cb-f5f2294c09db" />
+        <extendedCases>
+          <extend Id="7725ab05-ec6b-4151-8538-5c4377048e01">
+            <useCaseMoniker Id="54a558e7-b190-4c89-915c-3a0b79ec0f62" LastKnownName="Просмотр карточки работника" />
+            <elementDefinition Id="dbc982a9-f910-4fb5-b40e-8c20a5532a7f" />
+          </extend>
+          <extend Id="607eabe8-d13f-45f4-b2ce-b64efeaaabe9">
+            <useCaseMoniker Id="55812f8c-1e83-4542-bbec-fa4ea1c51910" LastKnownName="Редактировать работника" />
+            <elementDefinition Id="5de4090c-ba41-46ff-89ce-26b4e06dfe48" />
+          </extend>
+          <extend Id="463bf39b-6830-483b-aaa8-8a8251272ee8">
+            <useCaseMoniker Id="6ad8488b-d1be-45a8-bf91-8a27e90067b6" LastKnownName="Удалить работника" />
+            <elementDefinition Id="9d261b5b-7c29-4d8d-b794-3d9edec25b6f" />
+          </extend>
+          <extend Id="045888d9-dd6a-4ccb-81e1-938b1141dbda">
+            <useCaseMoniker Id="456a25cb-795b-4623-b1ef-bd7188865976" LastKnownName="Добавить нового работника" />
+            <elementDefinition Id="01c72bf8-4fef-4af8-96ab-2c1298309bc3" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="aad9d10e-090a-47e7-afbd-f3f79b6546bf" name="Просмотр списка книг" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0537f635-8a2d-4e39-a02e-560366abd859" />
+        <extendedCases>
+          <extend Id="eeb56c8e-54b7-4ce6-8c87-3e09ee52715b">
+            <useCaseMoniker Id="f693b022-fc82-4d61-b38e-9de1f85171c4" LastKnownName="Добавление новой книги" />
+            <elementDefinition Id="168388d7-a7f8-43c2-9336-4965660d2103" />
+          </extend>
+          <extend Id="aa24d9a7-c85e-4ddf-9508-b5bc2bc54f64">
+            <useCaseMoniker Id="201538d4-9033-4621-a976-c95c32f2f930" LastKnownName="Просмотр карточки книги" />
+            <elementDefinition Id="36927e51-4744-4239-9d8c-04b31b36f209" />
+          </extend>
+          <extend Id="fa78c3c2-0fe6-49f4-bd7b-e135934f379f">
+            <useCaseMoniker Id="bcc55f05-c7f9-4e40-8491-2bd4cd64f58f" LastKnownName="Удаление книги" />
+            <elementDefinition Id="9b5eea92-c306-419c-8504-1fb357121748" />
+          </extend>
+          <extend Id="75ef4547-adaf-4464-9b2c-3325eb7c140e">
+            <useCaseMoniker Id="7fbde642-4a14-4101-aca5-79c4f89ab8d9" LastKnownName="Редактирование данных о книге" />
+            <elementDefinition Id="6f22619c-bd91-4b47-9986-1eba0e112eeb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a07352ba-899f-49d0-b80c-966da3553d30" name="Просмотр списка авторов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5cb33a18-05ab-477e-b3f7-1bae7a2c6093" />
+        <extendedCases>
+          <extend Id="647ad1dd-43ff-4837-8f6f-8c6de49bda12">
+            <useCaseMoniker Id="a1c7e90c-2a51-44eb-98f8-aaf8a4e3f5fd" LastKnownName="Добавить нового автора" />
+            <elementDefinition Id="c43e7ff6-4a5f-4c47-bf41-40e240e5d0c4" />
+          </extend>
+          <extend Id="4c95fc0c-04db-4654-aca6-02bc80cedcf8">
+            <useCaseMoniker Id="1c04023e-a408-408d-ae61-453e45bbe46c" LastKnownName="Удалить автора" />
+            <elementDefinition Id="1600353b-8197-48d9-8f75-e089671e5aa5" />
+          </extend>
+          <extend Id="d57306b6-6732-41b5-8594-80a595c7c2f8">
+            <useCaseMoniker Id="1c70311a-cbc3-46c9-92a8-8a1968cef920" LastKnownName="Просмотр карточки автоа " />
+            <elementDefinition Id="d884756c-5aee-4cac-831c-62f79873e4dc" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8b783598-2213-4f55-9c20-fd239b6d269c" name="Просмотр списка тарифов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="67dc7b41-d05f-4c64-afbf-4bcc0d5a0eaa" />
+        <extendedCases>
+          <extend Id="b6049564-17fb-4759-96d4-8286d6d7e12e">
+            <useCaseMoniker Id="6fad13bc-dc72-4ba7-8566-f3d2b4d90e80" LastKnownName="Добавить новый тариф" />
+            <elementDefinition Id="ee99dc95-76f8-423d-aaa1-351b0adabf07" />
+          </extend>
+          <extend Id="8bc56ece-0744-459e-af5d-9b65225e6681">
+            <useCaseMoniker Id="9c52f977-72bc-4b7e-bea6-e0a926c11007" LastKnownName="Удалить тариф" />
+            <elementDefinition Id="e9e32ae7-8b95-4c25-8c1c-5609492e8699" />
+          </extend>
+          <extend Id="2d354465-7c55-43c5-8a9e-3a789679a01d">
+            <useCaseMoniker Id="9ebf5847-2950-4ee6-a7a3-d4811b7519c4" LastKnownName="Редактировать тарииф" />
+            <elementDefinition Id="f57f1b96-95a3-43c6-b602-e07c2134ccb3" />
+          </extend>
+          <extend Id="eb2a4480-7c18-4226-8c02-c1efe68db120">
+            <useCaseMoniker Id="dbf64d6a-8995-4b35-8209-68ccc0cd8d01" LastKnownName="Просмотр карточки тарифа" />
+            <elementDefinition Id="3d839402-82ca-446c-982d-56796bfa57b7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ea6a4026-aa9f-4ca7-bfe8-334a49b46763" name="Просмотр списка штрафов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2ec6137-2740-473e-8925-806515093d25" />
+        <extendedCases>
+          <extend Id="eed5dc58-5b27-4519-9cab-12d49511088f">
+            <useCaseMoniker Id="5f0f5556-5b6e-4603-9bbe-668a31a10e89" LastKnownName="Редактирование штрафа" />
+            <elementDefinition Id="891990fc-8b92-4dc7-a475-f06e7341b6b6" />
+          </extend>
+          <extend Id="e0ae0ac3-d9c5-4d82-920e-8ed4fc26df45">
+            <useCaseMoniker Id="e0a98d0b-46fb-44f5-b7c7-5717415901df" LastKnownName="Удаление штрафа" />
+            <elementDefinition Id="694db837-e546-4d6d-9c19-4d52bacfa618" />
+          </extend>
+          <extend Id="42ce78a0-9112-47e8-aa56-c6af0f928d70">
+            <useCaseMoniker Id="1972790a-8770-4a13-b4a4-7b703d419cec" LastKnownName="Добавление нового штрафа" />
+            <elementDefinition Id="20140490-e912-4d70-8b82-a83ec1b0e416" />
+          </extend>
+          <extend Id="df7e0730-a1be-45a6-8eae-8ca4c21a8ce0">
+            <useCaseMoniker Id="6e5bc945-5df3-42bf-8e26-acf67ee00c0b" LastKnownName="Просмотр карточки штрафа" />
+            <elementDefinition Id="d504bb07-c2a4-44af-b344-ccb70b814e8d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="62105f65-7455-41f9-8018-870a7c4eb7c2" name="Добавить нового клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f848f869-d41b-4532-b9c1-ccffbd2b015d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f221acff-b774-4d04-ba03-383422495064" name="Удалить клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e6557dc5-6d3d-4dff-b00b-8dad2ff4347d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d570b8fc-5c3b-405e-94c2-51ba88b41908" name="Редактировать клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c8b0c75e-e0e9-4f30-a91c-0543abe9642b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b211ee3e-6b16-4ace-bc10-149cc6c3095d" name="Просмотр карточки клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3d89231e-9fa4-4201-acac-656302ceb3c1" />
+        <additions>
+          <include Id="0f47c7f6-8cd6-472a-b606-01c18d99b544">
+            <useCaseMoniker Id="8b783598-2213-4f55-9c20-fd239b6d269c" LastKnownName="Просмотр списка тарифов" />
+            <elementDefinition Id="8fd98815-573b-4b42-b70d-2147c093ae27" />
+          </include>
+          <include Id="cb70c663-8b80-4ad2-a417-1f3b83a98548">
+            <useCaseMoniker Id="ea6a4026-aa9f-4ca7-bfe8-334a49b46763" LastKnownName="Просмотр списка штрафов" />
+            <elementDefinition Id="332c1779-7726-4417-82e7-795014131104" />
+          </include>
+          <include Id="ec76c253-1bba-4a8f-9b8d-0690df155420">
+            <useCaseMoniker Id="8a353f72-d308-424e-ab69-f8029eb939b5" LastKnownName="Просмотр списка прокатов" />
+            <elementDefinition Id="230ec244-74b2-46ff-93d7-2250e0c50685" />
+          </include>
+          <include Id="17031e6c-3489-4565-9264-98aa1df4f302">
+            <useCaseMoniker Id="657ad9aa-b47c-46a4-8cde-66d18aea64f8" LastKnownName="Просмотр списка платежей" />
+            <elementDefinition Id="11f1bb39-0c98-4623-8f55-1b7891d9045a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a1c7e90c-2a51-44eb-98f8-aaf8a4e3f5fd" name="Добавить нового автора" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a0877d99-f42a-4176-b291-7d043339bf1e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1c04023e-a408-408d-ae61-453e45bbe46c" name="Удалить автора" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="17d6dfac-e601-46ed-ab3b-d68694bcf3d5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1c70311a-cbc3-46c9-92a8-8a1968cef920" name="Просмотр карточки автоа " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="33f34c46-3c50-473b-86a3-b6714f489ab3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="90a890e5-0dfb-4e91-8640-ffb1fdb275c0" name="Добавить новый прокат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c37b4c78-8024-42a2-abf7-62b2d7d9aa1b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="251a0a15-d758-489c-a4d4-ca2ee1e669cc" name="Удалить прокат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a7139a8-e160-4629-a5f1-5392018e1538" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8b76e067-39eb-4e50-b25c-67cf60e31b4a" name="Редактировать прокат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="54db5b6c-9fa8-4adc-9815-6d1f6e32807e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="94d3acb2-1659-4836-981d-d117b1d6ecc6" name="Просмотр карточки проката" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a5aff8ea-746a-4771-81d0-13e427e7004b" />
+        <targetEnds>
+          <association Id="8d1c0223-44e7-4cda-90d9-4f4c99602e1d" isDerived="false" sourceEndRoleName="Просмотр карточки проката" targetEndRoleName="Просмотр карточки клиента" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b211ee3e-6b16-4ace-bc10-149cc6c3095d" LastKnownName="Просмотр карточки клиента" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="413cb6c7-c288-4805-8d1f-0842001a5071" name="Просмотр карточки проката" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c5802218-2f49-454e-b08b-954a71465c80" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28047749-78c9-4df7-b289-d8342f5923d3" name="Просмотр карточки клиента" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b37602c2-c649-42d1-a71d-e10b27c2b062" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2c5a4fd1-3aeb-4d2a-b51c-1c911f690bd9" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="c026b230-7754-4ec7-b692-a2329e5abdf9">
+            <useCaseMoniker Id="d8e0ca8a-c190-4df9-b799-62ef72f2e7c5" LastKnownName="Просмотр списка клиентов" />
+            <elementDefinition Id="6fef7435-05d9-4c82-b729-476be93dc820" />
+          </include>
+          <include Id="28799a4b-feff-44c5-94f8-d62e3f3ea4c8">
+            <useCaseMoniker Id="aad9d10e-090a-47e7-afbd-f3f79b6546bf" LastKnownName="Просмотр списка книг" />
+            <elementDefinition Id="d46ebd97-a5f4-4ec4-a7db-38dcb337ac5f" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="456a25cb-795b-4623-b1ef-bd7188865976" name="Добавить нового работника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70f78cd5-e394-479a-9dba-3ce808aeb354" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6ad8488b-d1be-45a8-bf91-8a27e90067b6" name="Удалить работника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="20698630-2e62-4186-975a-a8b15236be04" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="55812f8c-1e83-4542-bbec-fa4ea1c51910" name="Редактировать работника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1ae8d83c-7049-47b4-b4af-bf6e4350f15d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54a558e7-b190-4c89-915c-3a0b79ec0f62" name="Просмотр карточки работника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2069461-52ad-4e7a-bdcb-dd1737bd983b" />
+        <additions>
+          <include Id="88c0f047-29e6-4fc6-b635-731e63c924af">
+            <useCaseMoniker Id="8a353f72-d308-424e-ab69-f8029eb939b5" LastKnownName="Просмотр списка прокатов" />
+            <elementDefinition Id="9b733e26-f9d8-4b35-b6e8-5f550fef298d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f693b022-fc82-4d61-b38e-9de1f85171c4" name="Добавление новой книги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="570414f6-b66d-4337-b5a3-cb96e33db4b5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7fbde642-4a14-4101-aca5-79c4f89ab8d9" name="Редактирование данных о книге" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cd384d4f-e305-4ef0-be5d-db021e7bb0b9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bcc55f05-c7f9-4e40-8491-2bd4cd64f58f" name="Удаление книги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec49b798-41a2-4e16-a705-0e8aa97023b0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="201538d4-9033-4621-a976-c95c32f2f930" name="Просмотр карточки книги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94a5e900-d767-4f71-b01c-6e26af9ac541" />
+        <additions>
+          <include Id="f5986113-28d8-43d3-83f4-469f0d6423c1">
+            <useCaseMoniker Id="8a353f72-d308-424e-ab69-f8029eb939b5" LastKnownName="Просмотр списка прокатов" />
+            <elementDefinition Id="f146d0d8-8ff8-4cc6-9d09-f5070d2e6693" />
+          </include>
+          <include Id="cf265d96-14c8-4b54-bbb7-e1d5de8e604b">
+            <useCaseMoniker Id="1c70311a-cbc3-46c9-92a8-8a1968cef920" LastKnownName="Просмотр карточки автоа " />
+            <elementDefinition Id="270a6c44-c80f-4ab0-bf18-91faf6dbf598" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6fad13bc-dc72-4ba7-8566-f3d2b4d90e80" name="Добавить новый тариф" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1b72b20-1b56-40ea-a967-4160f82924aa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9c52f977-72bc-4b7e-bea6-e0a926c11007" name="Удалить тариф" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="73698533-45fe-41f4-b5df-c9cf23a620ae" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9ebf5847-2950-4ee6-a7a3-d4811b7519c4" name="Редактировать тарииф" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="93eb32e4-6d47-4cf9-bd0b-472c9b9a5368" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dbf64d6a-8995-4b35-8209-68ccc0cd8d01" name="Просмотр карточки тарифа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="19a40a90-78ac-4682-bcd8-f3ba0ba7bb0e" />
+        <additions>
+          <include Id="00e1f47c-a376-4eed-bbbf-c10ac8434075">
+            <useCaseMoniker Id="d8e0ca8a-c190-4df9-b799-62ef72f2e7c5" LastKnownName="Просмотр списка клиентов" />
+            <elementDefinition Id="cd3f083a-c5e6-4dbc-b748-f4661e490449" />
+          </include>
+          <include Id="943e6609-7923-4f32-9003-aa137a4c4c92">
+            <useCaseMoniker Id="ea6a4026-aa9f-4ca7-bfe8-334a49b46763" LastKnownName="Просмотр списка штрафов" />
+            <elementDefinition Id="3f578d3b-9e12-4e86-9380-1e59675a0dee" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1972790a-8770-4a13-b4a4-7b703d419cec" name="Добавление нового штрафа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8684e33b-44e8-41fd-8d01-a5b6f6547c8b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e0a98d0b-46fb-44f5-b7c7-5717415901df" name="Удаление штрафа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04a89fd9-b36e-43d5-80bf-d01d519f5f89" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6e5bc945-5df3-42bf-8e26-acf67ee00c0b" name="Просмотр карточки штрафа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1cc0e7c3-de37-423c-b816-7b6e35ac2fcc" />
+        <additions>
+          <include Id="36de0bbc-fffb-44cf-b1ce-bf98c1fb5a52">
+            <useCaseMoniker Id="d8e0ca8a-c190-4df9-b799-62ef72f2e7c5" LastKnownName="Просмотр списка клиентов" />
+            <elementDefinition Id="02551eec-f786-404d-a722-0b8883fcd5df" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5f0f5556-5b6e-4603-9bbe-668a31a10e89" name="Редактирование штрафа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="358e887b-42c6-479d-9790-4b3d9c00de6e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="657ad9aa-b47c-46a4-8cde-66d18aea64f8" name="Просмотр списка платежей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14c4e2c9-023b-4d4d-943a-6efab9132553" />
+        <additions>
+          <include Id="9a95e475-23f5-4e86-a2dd-b54f3b19ba89">
+            <useCaseMoniker Id="f3301ba8-0ca6-48e9-9ff0-b22b848957c8" LastKnownName="Просмотр  карточки платежа " />
+            <elementDefinition Id="f27fe0c4-f9cd-4280-a7e6-c88cfefa19c1" />
+          </include>
+          <include Id="20aaf725-e270-45b8-b6dd-84d38847ac96">
+            <useCaseMoniker Id="a01be58f-667e-4525-af74-9b9cd379ad76" LastKnownName="Добавить новый платёж" />
+            <elementDefinition Id="763abf89-0dd3-4c8a-97e7-dc09dfb4fac1" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f3301ba8-0ca6-48e9-9ff0-b22b848957c8" name="Просмотр  карточки платежа " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b3e23dfd-7a76-4b81-8bb6-e5aa0280c410" />
+        <extendedCases>
+          <extend Id="b6fa3769-0d44-46a1-bb5f-7c64e31e9f18">
+            <useCaseMoniker Id="ccce4ca3-e7f6-4623-8cab-17131834a2d6" LastKnownName="Удалить платёж" />
+            <elementDefinition Id="d72304d8-479e-4594-b77e-611257a9b044" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ccce4ca3-e7f6-4623-8cab-17131834a2d6" name="Удалить платёж" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c3d9bdc6-3fa2-4a77-a90f-d429d7ab57a4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a01be58f-667e-4525-af74-9b9cd379ad76" name="Добавить новый платёж" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="237f51c6-90c5-4783-a97b-13297250d0bc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="41626fc7-bb26-4ec2-8c0d-119c9274dea7" name="ModelingProject1">
+    <elementDefinition Id="a0e3ecc9-8599-4f24-a887-6ab1381dc088" />
+    <profileInstances>
+      <packageHasProfileInstances Id="94aafd07-5cd2-4e31-a775-3773a7404a6f">
+        <profileInstance Id="c0ccdabe-faee-46a2-819a-0725ab879a4c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a2862597-9064-4e35-8218-0d1fef666afe">
+        <profileInstance Id="e374291a-9875-4d0b-9656-790e607ff9ea" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

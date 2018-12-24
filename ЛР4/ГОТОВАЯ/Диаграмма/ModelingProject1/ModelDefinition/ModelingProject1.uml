@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="e367946e-3b13-4f21-adbc-68d7bb5ae64f"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="dc1672af-614f-40d9-9fe0-c4e7ebf097bc"
+        name="Библиотека"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="23a39af2-d874-4028-b8cd-3b328416f7b3"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9b9e7004-dc3b-4ab6-94a5-5dab62a65184"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="22840bdb-cef3-4291-9a91-708a9a2b69b0"
+                  LastKnownName="Авторизация"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="22840bdb-cef3-4291-9a91-708a9a2b69b0"
+            name="Авторизация"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ac7e2018-c124-472d-8f0f-00c49139c76b"
+                guard="Войти"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="048c82f7-f057-4500-8009-0fc09f7db37b"
+                  LastKnownName="Библиотека"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="048c82f7-f057-4500-8009-0fc09f7db37b"
+            name="Библиотека"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e0533b1b-27b5-465c-b093-035a263889b8"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="01bdffbb-a94d-4679-a161-368cc82f44be"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3dde738e-0262-4dd5-b5db-ced87009eb5c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="918dcf5b-8e5f-42fd-b1c4-9f4191780b0d"
+                  LastKnownName="Книги"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1de77bd1-5477-4259-af4b-e1cdd0655e28"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="06dd155a-110b-4644-a154-0cfe8c8a056d"
+                  LastKnownName="Платежи"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="ccad8140-f93a-463c-b9ff-32842077022c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d5d58c3d-24e1-4bbb-9c77-e1a866c762f2"
+                  LastKnownName="Авторы"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8e6efbea-13c8-4238-ae50-9ebf835ace2f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="688bc486-96e3-4054-b861-4168b4f34e78"
+                  LastKnownName="Читатели"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="920e88ec-e068-4954-b11d-c5b59f32754b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4b4fad06-67ac-406c-9932-9b39c2bea676"
+                  LastKnownName="Тарифы"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="957f36e1-0365-4e64-9e4e-d025cd8d0d82"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="69ffd7cf-21f2-45ea-9da6-1bdbdf8112ad"
+                  LastKnownName="Штрафы"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d6fbe6fd-7ffe-4a68-a324-978a4d6ef05e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4b0bee4a-ac2b-4715-897c-d4c9795c200f"
+                  LastKnownName="Баланс"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5446bed1-f895-4351-a965-7dcaf50c56bb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3f080288-4946-4cce-be16-215453756137"
+                  LastKnownName="Прокаты"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="17dc95bc-c4c4-4a87-8994-06b09e513b80"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="22e05a1c-9835-4264-922f-37ccf95d7c92"
+                  LastKnownName="Работники"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="01bdffbb-a94d-4679-a161-368cc82f44be"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="918dcf5b-8e5f-42fd-b1c4-9f4191780b0d"
+            name="Книги"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fbbce949-cfd2-4c17-9023-fcb008146f59"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b431ca37-efad-44dc-a557-632c6a9082cf"
+                  LastKnownName="CardBook"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7ac99091-56d9-4262-bad1-9c6b91bced23"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fb6ae9e3-261d-4e35-be11-d6893c522ebd"
+                  LastKnownName="Edit/AddBook"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="688bc486-96e3-4054-b861-4168b4f34e78"
+            name="Читатели"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9647e208-47d7-417d-b477-ef6d02f7353b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fabdb7c6-c98c-46e9-886f-ce754b636993"
+                  LastKnownName="Карточка читателя"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="bb99b577-f3ea-4673-8fc6-e8285ed982fb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="46cf46d5-003e-4ef0-acc3-884ba5b924af"
+                  LastKnownName="Edit/Add Reader"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4b4fad06-67ac-406c-9932-9b39c2bea676"
+            name="Тарифы"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="87764a59-0a9f-44a2-bf37-397e9756ec66"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="30ccac38-68fc-416e-a985-e494faaae81f"
+                  LastKnownName="CardTarif"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="72e9f756-4c97-4c14-ad7e-a74b4f51f9e4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="435aa8c8-d4a9-4657-968d-53bb27312128"
+                  LastKnownName="Edit/AddTarif"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="06dd155a-110b-4644-a154-0cfe8c8a056d"
+            name="Платежи"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="94ee0bf6-a9c9-4a52-90b5-ad55a19fc06e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="257b549c-f24c-45b2-b216-ce848f948dfd"
+                  LastKnownName="CardPay"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7c78f008-ac9a-43d2-a302-54e642656ae7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3ff99aab-92cc-4a0a-b2bb-7c7284bd203b"
+                  LastKnownName="Edit/AddPay"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d5d58c3d-24e1-4bbb-9c77-e1a866c762f2"
+            name="Авторы"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cc0cfbfe-1396-412b-b8cc-c8e94368e7b0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0d549317-4648-400f-9a71-312a60218059"
+                  LastKnownName="CardAuthor"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b76376f1-58b8-48e5-b53f-1b513dd3cbf5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="68b16301-ee24-45e7-bb67-7378e2f1ed13"
+                  LastKnownName="Edit/AddAuthor"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4b0bee4a-ac2b-4715-897c-d4c9795c200f"
+            name="Баланс"
+            isLeaf="false" />
+          <opaqueAction
+            Id="69ffd7cf-21f2-45ea-9da6-1bdbdf8112ad"
+            name="Штрафы"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8eb1b97c-7a2c-469d-ab2c-ded545db6a05"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a25335f3-c90b-4f27-a932-b3bcc38b22e8"
+                  LastKnownName="CardFine"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b79df541-7867-4c03-9638-1ed3c2638432"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="05f9c3d0-9e85-4499-aecb-aca0ce3ac024"
+                  LastKnownName="Edit/AddFine"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3f080288-4946-4cce-be16-215453756137"
+            name="Прокаты"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="51160c38-cd20-406c-ad88-752a940b174a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b71ebc1e-3a69-4ec2-b85b-c3d4766788c7"
+                  LastKnownName="CardService"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e8bcda7f-a4eb-458a-a094-be26b158576c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5b4710e8-fe3f-4a02-a190-7d8d2c7f8c5e"
+                  LastKnownName="Edit/AddService"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="497926e5-29dc-4318-a715-5d4c16ba3a04"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="05f9c3d0-9e85-4499-aecb-aca0ce3ac024"
+                  LastKnownName="Edit/AddFine"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="49cce715-b50e-489b-b5a0-dafb93cd2474"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fb6ae9e3-261d-4e35-be11-d6893c522ebd"
+                  LastKnownName="Edit/AddBook"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="22e05a1c-9835-4264-922f-37ccf95d7c92"
+            name="Работники"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="78280fbc-a34c-4174-b2fb-9f47fc317a80"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="80d7f543-ee58-40f1-af03-51f1e4751d40"
+                  LastKnownName="CardUser"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="734adfe2-0a94-46d2-b660-443b4c8c37fb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9a275cff-4fe8-4f9e-a6ae-4ff118fd3b2d"
+                  LastKnownName="Edit/AddUser"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fabdb7c6-c98c-46e9-886f-ce754b636993"
+            name="Карточка читателя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="470e0ec8-1ca7-4ad7-96a0-8a1682eceafd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3f080288-4946-4cce-be16-215453756137"
+                  LastKnownName="Прокаты"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="bf5da226-ef9d-4ca7-a61e-f0d8d2a81259"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="06dd155a-110b-4644-a154-0cfe8c8a056d"
+                  LastKnownName="Платежи"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8fa0c855-cd8c-44c6-be33-92a8ec3bcf06"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4b0bee4a-ac2b-4715-897c-d4c9795c200f"
+                  LastKnownName="Баланс"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="46cf46d5-003e-4ef0-acc3-884ba5b924af"
+            name="Edit/Add Reader"
+            isLeaf="false" />
+          <opaqueAction
+            Id="257b549c-f24c-45b2-b216-ce848f948dfd"
+            name="CardPay"
+            isLeaf="false" />
+          <opaqueAction
+            Id="3ff99aab-92cc-4a0a-b2bb-7c7284bd203b"
+            name="Edit/AddPay"
+            isLeaf="false" />
+          <opaqueAction
+            Id="30ccac38-68fc-416e-a985-e494faaae81f"
+            name="CardTarif"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ab22c8b4-aa36-4cff-b3c6-395e27dfa688"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="688bc486-96e3-4054-b861-4168b4f34e78"
+                  LastKnownName="Читатели"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="435aa8c8-d4a9-4657-968d-53bb27312128"
+            name="Edit/AddTarif"
+            isLeaf="false" />
+          <opaqueAction
+            Id="80d7f543-ee58-40f1-af03-51f1e4751d40"
+            name="CardUser"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a1326e6e-eee6-4d97-bbfe-e1c070b510f3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3f080288-4946-4cce-be16-215453756137"
+                  LastKnownName="Прокаты"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9a275cff-4fe8-4f9e-a6ae-4ff118fd3b2d"
+            name="Edit/AddUser"
+            isLeaf="false" />
+          <opaqueAction
+            Id="a25335f3-c90b-4f27-a932-b3bcc38b22e8"
+            name="CardFine"
+            isLeaf="false" />
+          <opaqueAction
+            Id="05f9c3d0-9e85-4499-aecb-aca0ce3ac024"
+            name="Edit/AddFine"
+            isLeaf="false" />
+          <opaqueAction
+            Id="b431ca37-efad-44dc-a557-632c6a9082cf"
+            name="CardBook"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="de5078f4-1391-488b-8286-6cf8cf5b33b4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b71ebc1e-3a69-4ec2-b85b-c3d4766788c7"
+                  LastKnownName="CardService"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="cce7a8d1-ea7a-4d75-9da7-0bc6bec4f32e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3f080288-4946-4cce-be16-215453756137"
+                  LastKnownName="Прокаты"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fb6ae9e3-261d-4e35-be11-d6893c522ebd"
+            name="Edit/AddBook"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e652de18-169f-4e7d-b9d1-cad83556e204"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="68b16301-ee24-45e7-bb67-7378e2f1ed13"
+                  LastKnownName="Edit/AddAuthor"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0d549317-4648-400f-9a71-312a60218059"
+            name="CardAuthor"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3df21659-912d-4966-a510-5cd5ca2c44f5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="918dcf5b-8e5f-42fd-b1c4-9f4191780b0d"
+                  LastKnownName="Книги"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="68b16301-ee24-45e7-bb67-7378e2f1ed13"
+            name="Edit/AddAuthor"
+            isLeaf="false" />
+          <opaqueAction
+            Id="b71ebc1e-3a69-4ec2-b85b-c3d4766788c7"
+            name="CardService"
+            isLeaf="false" />
+          <opaqueAction
+            Id="5b4710e8-fe3f-4a02-a190-7d8d2c7f8c5e"
+            name="Edit/AddService"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

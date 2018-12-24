@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLActivityDiagram3">
+  <activityRootModelMoniker Id="c4343964-8e94-4eac-b828-6541df362c47" />
+  <nestedChildShapes>
+    <initialNodeShape Id="40dde0d4-847e-4197-871d-d9356531715c" absoluteBounds="0.5, 1.375, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="abd799a2-de08-4fd1-bf97-f4a6be0705e0" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="b89eeb5c-4fc4-43aa-bfb3-9ed29e4247cf" absoluteBounds="1, 1.25, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="2a717121-aa58-4733-a8fc-0c79464cda1c" LastKnownName="Открытые карточки прокат" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(0.625 : 1.4375); (1 : 1.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="6c9ca99b-f57c-4a11-b00e-bee629b2b810" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="40dde0d4-847e-4197-871d-d9356531715c" />
+        <actionShapeMoniker Id="b89eeb5c-4fc4-43aa-bfb3-9ed29e4247cf" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="2bbb40db-46b7-4f9b-bd98-0227c15bc31c" absoluteBounds="4.5, 1.25, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="3716607d-a028-4b06-b5f6-aeb797039a9c" LastKnownName="Изменение данных о прокате" />
+    </actionShape>
+    <decisionNodeShape Id="9b5d1f00-4335-4077-8834-e69d055e998f" absoluteBounds="4.875, 2.25, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="15941c63-3482-4347-87bf-648f145296c5" LastKnownName="Decision1" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <commentShape Id="0e96fb77-a9b1-4e66-b830-284dfd866b7d" absoluteBounds="3.375, 2.875, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="5161bdfd-1616-46dc-862b-be12e388a744" />
+      <relativeChildShapes />
+    </commentShape>
+    <controlFlowConnector edgePoints="[(5.0625 : 1.625); (5.0625 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="e11840e9-3253-481f-8e97-123e2392fc6a" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="2bbb40db-46b7-4f9b-bd98-0227c15bc31c" />
+        <decisionNodeShapeMoniker Id="9b5d1f00-4335-4077-8834-e69d055e998f" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="a57adbeb-967e-40af-ba13-0d62183b5fb6" absoluteBounds="2.875, 2.25, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="9b8bf2c0-d977-4360-8660-7dcdcb71661c" LastKnownName="Сохранение данных" />
+    </actionShape>
+    <activityFinalNodeShape Id="d74fea15-bbad-41ff-86cf-ce290c288295" absoluteBounds="4.125, 3.5, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="e79ba364-a882-4060-8903-185fa3de7c4c" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <controlFlowConnector edgePoints="[(5.14903846153846 : 2.53846153846154); (5.14903846153846 : 3.55474782908817); (4.2495173672946 : 3.55474782908817)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <controlFlowMoniker Id="e1de03a7-fffb-4f42-8331-3b6d91fa7195" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="9b5d1f00-4335-4077-8834-e69d055e998f" />
+        <activityFinalNodeShapeMoniker Id="d74fea15-bbad-41ff-86cf-ce290c288295" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.875 : 2.4375); (4 : 2.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="38653adc-1fed-4f49-b0ec-d2716f405cd8" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="9b5d1f00-4335-4077-8834-e69d055e998f" />
+        <actionShapeMoniker Id="a57adbeb-967e-40af-ba13-0d62183b5fb6" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.09375 : 2.625); (3.09375 : 3.5625); (4.125 : 3.5625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="a03f2703-bdbb-47ce-b427-56953287698e" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="a57adbeb-967e-40af-ba13-0d62183b5fb6" />
+        <activityFinalNodeShapeMoniker Id="d74fea15-bbad-41ff-86cf-ce290c288295" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="c04093b2-1a7d-4838-a860-e079ed6a5b45" absoluteBounds="2.875, 1.125, 1.125, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="0e1f9c2e-fe8b-43ff-8b4f-4f1c54c9aa5e" LastKnownName="Открытие карточки редактирования проката" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(2.125 : 1.4375); (2.875 : 1.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="f991d9b9-52a3-4797-86c7-f23ad146f249" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="b89eeb5c-4fc4-43aa-bfb3-9ed29e4247cf" />
+        <actionShapeMoniker Id="c04093b2-1a7d-4838-a860-e079ed6a5b45" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4 : 1.4375); (4.5 : 1.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="ec1ad61a-cace-4a78-b2e9-e3f9a578e2f8" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="c04093b2-1a7d-4838-a860-e079ed6a5b45" />
+        <actionShapeMoniker Id="2bbb40db-46b7-4f9b-bd98-0227c15bc31c" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

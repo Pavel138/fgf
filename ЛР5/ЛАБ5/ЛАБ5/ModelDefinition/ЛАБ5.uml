@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="8880c9fe-d53c-4af7-84a2-6e80dac3a103"
+  name="ЛАБ5" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="081efce8-4a5a-4f92-b4c7-856e48866f93">
+      <body>Подтверждение</body>
+    </comment>
+    <comment
+      Id="f3121117-4dfd-46ad-bb1e-d1cd476a990e">
+      <body>Подтверждение</body>
+    </comment>
+    <comment
+      Id="5d0bb2f8-2d78-4526-8173-2dbc75e37e88">
+      <body>ОК?</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="47899260-d289-4905-8cc4-95a367e814bc"
+        name="Создание проката"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="94040f85-404e-4f08-85ba-be5a86b30d02"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="04912946-4a7f-49cc-80b7-aaddc1b9c610"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aa0d6a2a-0a29-46dd-91dd-6ee486cda4ee"
+                  LastKnownName="Форма добавления проката "
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="aa0d6a2a-0a29-46dd-91dd-6ee486cda4ee"
+            name="Форма добавления проката "
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8831ce4a-2208-4c5d-bf98-b881abd12039"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eab260fd-d92e-4766-b110-9bf420f169c2"
+                  LastKnownName="Выбор читателя"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="eab260fd-d92e-4766-b110-9bf420f169c2"
+            name="Выбор читателя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1994601d-9c7b-407b-a7b0-ccc326331018"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c7aeb9ee-8674-4f63-a1c0-bfeb2c193aec"
+                  LastKnownName="Поиск скидки"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7edc3e0f-646f-4cf8-ae9f-450b6aed97d0"
+            name="Выбор даты начала и конца проката"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9a92ce68-12bf-41c0-bc48-ffecb4ec6ad2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="866634b6-b41a-4eb4-b815-8e9db7f5eb42"
+                  LastKnownName="Выбор книги"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b150a237-52a7-4ff4-b133-50a425138ea0"
+            name="Выбор работника"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0093327b-90f4-486e-b834-3076c16957cd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7edc3e0f-646f-4cf8-ae9f-450b6aed97d0"
+                  LastKnownName="Выбор даты начала и конца проката"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="866634b6-b41a-4eb4-b815-8e9db7f5eb42"
+            name="Выбор книги"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d618acf0-eaad-4f31-bd6f-f29a2ba64543"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9d6ceb6e-ad52-44c0-8678-a39e027e6e84"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c7aeb9ee-8674-4f63-a1c0-bfeb2c193aec"
+            name="Поиск скидки"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a7e9c8eb-56e2-47fe-9865-a2ceada46241"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b150a237-52a7-4ff4-b133-50a425138ea0"
+                  LastKnownName="Выбор работника"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3c2b09ff-e5da-4613-a5be-66364ea30caf"
+            name="Оплата"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ac3ff308-a9eb-4d13-8cb3-3892ac83f3ed"
+                guard="Создание проката"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f2d64aff-3445-4b35-a68c-53acaa37f3af"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="f2d64aff-3445-4b35-a68c-53acaa37f3af"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="9d6ceb6e-ad52-44c0-8678-a39e027e6e84"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1df70570-f057-44b3-96c1-272d0b21024e"
+                guard="Добавить книгу"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="866634b6-b41a-4eb4-b815-8e9db7f5eb42"
+                  LastKnownName="Выбор книги"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="384aab96-50e5-466e-89c5-756367dee2dd"
+                guard="ОК"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3c2b09ff-e5da-4613-a5be-66364ea30caf"
+                  LastKnownName="Оплата"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4a49a6f0-6937-4482-8449-e84731beee10"
+                guard="Отмена"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f2d64aff-3445-4b35-a68c-53acaa37f3af"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="2213a6f3-8aa0-450d-b071-afe29c4c65f3"
+        name="Удаление проката"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="30341db9-9bb9-4c79-aaee-c0c747a10c1e"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="65d009f6-869b-47b9-9833-34100c1bdd7c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e8de38eb-ac0d-45f7-8e62-7ebd47822bcb"
+                  LastKnownName="Открытие списка прокатов"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="e8de38eb-ac0d-45f7-8e62-7ebd47822bcb"
+            name="Открытие списка прокатов"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="84e076de-4e02-4acd-84d5-b6bb2e2ef9b8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2ceaa3c9-7628-44bc-8bbd-178b978dd130"
+                  LastKnownName="Выбор проката"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="3c0afc58-7970-496d-b780-25923044f126"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b216a041-a093-48fc-b955-ac4fb28a30b7"
+                guard="Да"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7dbaa45a-7f1c-4fac-8e38-e098925b5cbf"
+                  LastKnownName="Удаение проката"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="eae3a5b2-9068-47b2-86bc-2dab14bb6111"
+                guard="Нет"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e8de38eb-ac0d-45f7-8e62-7ebd47822bcb"
+                  LastKnownName="Открытие списка прокатов"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="7dbaa45a-7f1c-4fac-8e38-e098925b5cbf"
+            name="Удаение проката"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5a069339-2a21-4b62-bf88-4b6771937a7e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e8de38eb-ac0d-45f7-8e62-7ebd47822bcb"
+                  LastKnownName="Открытие списка прокатов"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2ceaa3c9-7628-44bc-8bbd-178b978dd130"
+            name="Выбор проката"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="69f6fe58-e727-41e3-87ba-1eb88f82a1a8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a4876a35-70b1-49c6-9490-7460d713f590"
+                  LastKnownName="Удалить прокат"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a4876a35-70b1-49c6-9490-7460d713f590"
+            name="Удалить прокат"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b2e2368d-990d-4a16-9663-3add87b4b830"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="3c0afc58-7970-496d-b780-25923044f126"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="a1e544ba-8886-4c7c-8c58-9288153cbd1c"
+        name="Редактирование проката"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="17ae2a3b-8335-4371-bedc-67738ae7998d"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d4224c62-d77a-4946-9996-d137d2fcff20"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="95607f46-b5d5-411e-b09c-49eda3c7a7ae"
+                  LastKnownName="Открытые карточки прокат"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="95607f46-b5d5-411e-b09c-49eda3c7a7ae"
+            name="Открытые карточки прокат"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="80bbf0e8-36ab-4d8d-ab45-dbfb3a0af70f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d47408df-e568-4ddf-88ab-4b4fc04596e4"
+                  LastKnownName="Открытие карточки редактирования проката"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4e0481b9-6dad-494d-b174-87f75b91063b"
+            name="Изменение данных о прокате"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e960d882-dbba-46fa-8fc2-ecffe72f8946"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="3bc1436b-918a-442f-83ba-85094f109555"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="3bc1436b-918a-442f-83ba-85094f109555"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a44e57ec-703f-4833-83d1-6bf60dee4a50"
+                guard="Отмена"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="87043b80-2538-46d7-8ba9-5d98a8541ea7"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1aa9c69d-a7bd-4f0b-9b21-3e56a31deec5"
+                guard="Ок"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c1a1b914-b072-4ee3-b312-e5e87c50f064"
+                  LastKnownName="Сохранение данных"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="c1a1b914-b072-4ee3-b312-e5e87c50f064"
+            name="Сохранение данных"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c2048176-56fb-4f4a-b165-40a9c59d0691"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="87043b80-2538-46d7-8ba9-5d98a8541ea7"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="87043b80-2538-46d7-8ba9-5d98a8541ea7"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="d47408df-e568-4ddf-88ab-4b4fc04596e4"
+            name="Открытие карточки редактирования проката"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="24b5d340-82e8-41ae-bceb-2d420ed08e24"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4e0481b9-6dad-494d-b174-87f75b91063b"
+                  LastKnownName="Изменение данных о прокате"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="4956e810-7d84-4090-8f75-92841cc6f7b4"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="a429071e-e3f7-4ea6-8bcf-d761ccf93796"
+        name="Добавление штрафа"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="ca50cd37-1996-4839-846b-868d88db9b29"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f3520166-cf20-4f55-8a4f-28518f3d317d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0f303cb1-475c-4a16-ae17-eceae13ac033"
+                  LastKnownName="Форма добавления штрафа"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="0f303cb1-475c-4a16-ae17-eceae13ac033"
+            name="Форма добавления штрафа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bd12cd3c-19d0-4ffe-a330-d267f65a14b3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="99b1a8b3-50b6-460a-a44d-c37038e671fd"
+                  LastKnownName="Заполнение полей "
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="99b1a8b3-50b6-460a-a44d-c37038e671fd"
+            name="Заполнение полей "
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="849d3950-54b6-41d3-865a-46c0eacca8b9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e75a0fef-0eb7-409a-a469-28b8da1efc81"
+                  LastKnownName="Выбор даты"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e75a0fef-0eb7-409a-a469-28b8da1efc81"
+            name="Выбор даты"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="08464ee7-3def-4f0d-a417-085910e8041d"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="d6703783-b5c9-426b-9a18-3a99caddbc1f"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="d6703783-b5c9-426b-9a18-3a99caddbc1f"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="543e0493-19b6-4ded-bc26-20f8a53965ed"
+                guard="ОК"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cd46b59a-4b71-4976-9751-b9ec80109a44"
+                  LastKnownName="Добавление нового  штрафа"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="94acd541-ca45-443f-bf57-eacc4a467132"
+                guard="Отмена"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f5f75edd-0e77-417d-acc0-98132a746f09"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="cd46b59a-4b71-4976-9751-b9ec80109a44"
+            name="Добавление нового  штрафа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1216be3e-9958-4d1d-8e11-76513a3e1de4"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f5f75edd-0e77-417d-acc0-98132a746f09"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="f5f75edd-0e77-417d-acc0-98132a746f09"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="69e0b6ce-67f7-4714-99d0-331af42375c3"
+        name="Добавление книги"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a272ff34-3236-4c23-a8e6-ea626dd5a8bc"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="31e1bff7-4910-4e6d-8835-cc355ae6fd6b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d1f6e2a6-e904-4ca4-a528-163f541a7c94"
+                  LastKnownName="Открытие формы добавления книги"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="d1f6e2a6-e904-4ca4-a528-163f541a7c94"
+            name="Открытие формы добавления книги"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0b572e64-63a9-495f-b846-d3c9fa755408"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a83912be-95d1-4b9b-9fca-c1c5279a8d80"
+                  LastKnownName="Заполнение названия"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="22427ead-bf09-42f8-ac5e-7ee91f4f5625"
+            name="Выбор жанра"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="37898b58-fc26-4e52-9b99-e4e5f35d8bb0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a71c3753-0260-4f34-a9f6-cf499a4142e0"
+                  LastKnownName="Выбор типа книги"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a71c3753-0260-4f34-a9f6-cf499a4142e0"
+            name="Выбор типа книги"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="86140969-c23c-4858-9d68-834ab23e330f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f117d651-97fe-4caa-8828-71f97584c3aa"
+                  LastKnownName="Заполнение цены"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a83912be-95d1-4b9b-9fca-c1c5279a8d80"
+            name="Заполнение названия"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="385358fe-a9a6-4a22-ae3e-dfc94a0262a6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="22427ead-bf09-42f8-ac5e-7ee91f4f5625"
+                  LastKnownName="Выбор жанра"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f117d651-97fe-4caa-8828-71f97584c3aa"
+            name="Заполнение цены"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f421dccc-9aa1-4253-abe2-f99e0eb1e602"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="330ab716-eac2-435e-878f-7ff317cf0e77"
+                  LastKnownName="Добавить автора"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="330ab716-eac2-435e-878f-7ff317cf0e77"
+            name="Добавить автора"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="de2c8b1d-e5b0-4fe7-b796-0419c934db91"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="b9438b0b-6883-4d00-b5e0-4b38d952759d"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="b9438b0b-6883-4d00-b5e0-4b38d952759d"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0c136b28-597d-4730-816a-0bf984a351f6"
+                guard="Добавить атора"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="330ab716-eac2-435e-878f-7ff317cf0e77"
+                  LastKnownName="Добавить автора"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="43651544-02c8-436a-857b-674b7970ac42"
+                guard="ОК"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c3c8a6e5-1555-4605-a165-140facd3a215"
+                  LastKnownName="Добавление книги"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="bc0eb6f5-e2d3-46f5-9280-d26695d856d3"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="c3c8a6e5-1555-4605-a165-140facd3a215"
+            name="Добавление книги"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e1ac98de-e502-4b42-ac10-147bedfd77fa"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="bc0eb6f5-e2d3-46f5-9280-d26695d856d3"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="f6308762-9b5a-43ce-8581-c2c6d026b132"
+        name="Баланс"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="eda759ef-624e-4fdb-ac4e-902d7932595f"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7e19ee4d-4d1b-4969-91d4-18159257ab0e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8e0c19fd-6aa8-4875-ab41-92d50fc3eac8"
+                  LastKnownName="Открытие формы отчёта"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="8e0c19fd-6aa8-4875-ab41-92d50fc3eac8"
+            name="Открытие формы отчёта"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="eb5bb005-c9f3-4570-8a4b-fd127d5d99c1"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="844d4b9f-1f45-45d3-bb59-9745cceec3aa"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b22b514a-e13d-4107-a15f-1d86368892a4"
+            name="Открытие карточки редактирования платежа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fef99bdd-35cc-426a-bac2-0adbb56063ab"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6d3d0c41-f311-47fe-896d-6ffa8a9666aa"
+                  LastKnownName="Изменение полей"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6d3d0c41-f311-47fe-896d-6ffa8a9666aa"
+            name="Изменение полей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7656b82d-ddc6-4174-881c-7dce4be56cbb"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="388205a4-5fdb-4ded-bb4d-84ff94b32a3f"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6e427941-8548-41e3-baa5-6eb39ca7387c"
+            name="Выбор платежа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="63386de6-954c-46ab-bb0c-38e7340bd1dc"
+                guard="Двойной клик"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b22b514a-e13d-4107-a15f-1d86368892a4"
+                  LastKnownName="Открытие карточки редактирования платежа"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="388205a4-5fdb-4ded-bb4d-84ff94b32a3f"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dbf9856e-202c-4f1d-aa9c-2c0b43ed0339"
+                guard="Отмена"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8e0c19fd-6aa8-4875-ab41-92d50fc3eac8"
+                  LastKnownName="Открытие формы отчёта"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="fd6c2034-776a-4abb-ad8c-f7d365c4bf68"
+                guard="ОК"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="17e18c97-822d-4702-92b9-b93d5a85b608"
+                  LastKnownName="Сохранение платежа"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="17e18c97-822d-4702-92b9-b93d5a85b608"
+            name="Сохранение платежа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b2eb7303-ac24-4de6-8b5a-625213d15aa8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8e0c19fd-6aa8-4875-ab41-92d50fc3eac8"
+                  LastKnownName="Открытие формы отчёта"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="844d4b9f-1f45-45d3-bb59-9745cceec3aa"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="59222166-d4d7-4fec-b95f-6e982410cc1f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6e427941-8548-41e3-baa5-6eb39ca7387c"
+                  LastKnownName="Выбор платежа"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7678d774-08af-425d-a0d8-6893e9eeab45"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bb52e118-ce94-45c5-8c9c-f12906f969dd"
+                  LastKnownName="Расчитать баланс"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="bb52e118-ce94-45c5-8c9c-f12906f969dd"
+            name="Расчитать баланс"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="79fb2c08-06bc-41b2-b659-4b9ec2fc52c5"
+        name="Состояние поката "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="cf8755b0-d376-4bf4-904e-57bd96b8a51d"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0ea261d1-002e-434c-86cb-0bb5bfa6e937"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a8761d36-b966-4a72-99c4-78baede0f352"
+                  LastKnownName="Создание проката"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="a8761d36-b966-4a72-99c4-78baede0f352"
+            name="Создание проката"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4bae52e9-8c28-4816-a3b2-d9353a4572e6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b3423c62-2a1f-4f05-95f8-9b22399d40a7"
+                  LastKnownName="Добавление работника"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b3423c62-2a1f-4f05-95f8-9b22399d40a7"
+            name="Добавление работника"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aa3fe257-608a-4124-baa9-1dacd9e6642c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="15651b96-0d98-4c74-90f1-0e06285aaf45"
+                  LastKnownName="Добавление читаателя"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="15651b96-0d98-4c74-90f1-0e06285aaf45"
+            name="Добавление читаателя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="06ef77cc-9a30-4b03-90fc-098d49f40eb9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a9649cbd-5cb1-403a-9b5f-d6c5a58e53d4"
+                  LastKnownName="Добавление книг"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a9649cbd-5cb1-403a-9b5f-d6c5a58e53d4"
+            name="Добавление книг"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b6400c7a-8c11-4a9d-bd37-e11669e5f126"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9a9fa48a-10f0-4d99-aef1-dcf6615adbda"
+                  LastKnownName="Оплата"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9a9fa48a-10f0-4d99-aef1-dcf6615adbda"
+            name="Оплата"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="44b234b9-856c-40b9-8380-c943299fefd5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f3e8d326-b734-4206-82d4-54636aac2198"
+                  LastKnownName="Прокат активен"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f3e8d326-b734-4206-82d4-54636aac2198"
+            name="Прокат активен"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="427e139b-5f4f-47b0-80d6-de7e68a1381f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aacf78ef-7595-4caa-9cd9-efd22d4105f7"
+                  LastKnownName="Прока неактивен"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="bfdad86c-8063-4b79-81f4-b93c074287c0"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="aacf78ef-7595-4caa-9cd9-efd22d4105f7"
+            name="Прока неактивен"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0a23b14d-8f26-4a47-b7b5-7d72a260adff"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6740dfd4-de6e-41b6-bf29-9b6b7ae9adc2"
+                  LastKnownName="Прокат удалён"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6740dfd4-de6e-41b6-bf29-9b6b7ae9adc2"
+            name="Прокат удалён"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c161861a-2a1a-4048-b133-6e18a27577ab"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="bfdad86c-8063-4b79-81f4-b93c074287c0"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ЛАБ5.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

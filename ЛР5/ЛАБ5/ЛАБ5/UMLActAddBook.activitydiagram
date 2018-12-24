@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="6e83c814-3341-4bd7-96f2-e7620cd52fe6" name="Добавление книги" linkedPackageId="3b68e792-b1da-4d8e-9af4-71b43deeacf6" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="4ab8954c-00ee-4f38-b72b-04c1bb195770">
+      <elementDefinition Id="5d0bb2f8-2d78-4526-8173-2dbc75e37e88" />
+      <body>ОК?</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="e9ddcd9f-11d5-4f57-8732-7c424c4c346a" name="Добавление книги" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="69e0b6ce-67f7-4714-99d0-331af42375c3" />
+        <nodes>
+          <initialNode Id="1710a0d6-1849-471e-a0dc-ce957210956e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a272ff34-3236-4c23-a8e6-ea626dd5a8bc" />
+            <flowNodeTargets>
+              <controlFlow Id="540a1e2a-8e16-4c48-a034-e5343b4cba98" isLeaf="false">
+                <opaqueActionMoniker Id="75f0d866-4bdf-4c27-b141-e8c4914fc54f" LastKnownName="Открытие формы добавления книги" />
+                <elementDefinition Id="31e1bff7-4910-4e6d-8835-cc355ae6fd6b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="75f0d866-4bdf-4c27-b141-e8c4914fc54f" name="Открытие формы добавления книги" isLeaf="false">
+            <elementDefinition Id="d1f6e2a6-e904-4ca4-a528-163f541a7c94" />
+            <flowNodeTargets>
+              <controlFlow Id="9eb94dec-cf55-438b-ab0a-d3565260e80a" isLeaf="false">
+                <opaqueActionMoniker Id="c4cc26ec-678f-45e8-8708-a1b6357a4a28" LastKnownName="Заполнение названия" />
+                <elementDefinition Id="0b572e64-63a9-495f-b846-d3c9fa755408" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8fc5e846-9511-4f84-b77d-1cd98d19ea96" name="Выбор жанра" isLeaf="false">
+            <elementDefinition Id="22427ead-bf09-42f8-ac5e-7ee91f4f5625" />
+            <flowNodeTargets>
+              <controlFlow Id="52047ee5-eaa3-457a-934b-9f8286990257" isLeaf="false">
+                <opaqueActionMoniker Id="40a3ba27-0fa8-4c0d-b02f-33d3c06e3252" LastKnownName="Выбор типа книги" />
+                <elementDefinition Id="37898b58-fc26-4e52-9b99-e4e5f35d8bb0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="40a3ba27-0fa8-4c0d-b02f-33d3c06e3252" name="Выбор типа книги" isLeaf="false">
+            <elementDefinition Id="a71c3753-0260-4f34-a9f6-cf499a4142e0" />
+            <flowNodeTargets>
+              <controlFlow Id="709e8cbb-1531-4607-ba6f-fc525e455722" isLeaf="false">
+                <opaqueActionMoniker Id="e3b04623-633f-41f8-9a85-35a53aca6a7d" LastKnownName="Заполнение цены" />
+                <elementDefinition Id="86140969-c23c-4858-9d68-834ab23e330f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c4cc26ec-678f-45e8-8708-a1b6357a4a28" name="Заполнение названия" isLeaf="false">
+            <elementDefinition Id="a83912be-95d1-4b9b-9fca-c1c5279a8d80" />
+            <flowNodeTargets>
+              <controlFlow Id="6b2206d7-6657-4801-8573-bff633fd6e07" isLeaf="false">
+                <opaqueActionMoniker Id="8fc5e846-9511-4f84-b77d-1cd98d19ea96" LastKnownName="Выбор жанра" />
+                <elementDefinition Id="385358fe-a9a6-4a22-ae3e-dfc94a0262a6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e3b04623-633f-41f8-9a85-35a53aca6a7d" name="Заполнение цены" isLeaf="false">
+            <elementDefinition Id="f117d651-97fe-4caa-8828-71f97584c3aa" />
+            <flowNodeTargets>
+              <controlFlow Id="472bdde7-b54e-4611-8c83-ff05b1d97b0c" isLeaf="false">
+                <opaqueActionMoniker Id="3fc2c3dc-6dd5-4915-b3fc-b80ade19102f" LastKnownName="Добавить автора" />
+                <elementDefinition Id="f421dccc-9aa1-4253-abe2-f99e0eb1e602" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3fc2c3dc-6dd5-4915-b3fc-b80ade19102f" name="Добавить автора" isLeaf="false">
+            <elementDefinition Id="330ab716-eac2-435e-878f-7ff317cf0e77" />
+            <flowNodeTargets>
+              <controlFlow Id="173e1194-abaf-4e1e-86aa-744128264cc1" isLeaf="false">
+                <decisionNodeMoniker Id="4f69c1da-a256-4b6f-93a2-2f7acf5b967b" LastKnownName="Decision1" />
+                <elementDefinition Id="de2c8b1d-e5b0-4fe7-b796-0419c934db91" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="4f69c1da-a256-4b6f-93a2-2f7acf5b967b" name="Decision1" isLeaf="false">
+            <elementDefinition Id="b9438b0b-6883-4d00-b5e0-4b38d952759d" />
+            <flowNodeTargets>
+              <controlFlow Id="ce317e2d-639b-45f9-8f0c-3b66f0a20ec6" guard="Добавить атора" isLeaf="false">
+                <opaqueActionMoniker Id="3fc2c3dc-6dd5-4915-b3fc-b80ade19102f" LastKnownName="Добавить автора" />
+                <elementDefinition Id="0c136b28-597d-4730-816a-0bf984a351f6" />
+              </controlFlow>
+              <controlFlow Id="6bda7b4d-d4c7-4f70-b342-19095f0d35e1" guard="ОК" isLeaf="false">
+                <opaqueActionMoniker Id="da1de360-57aa-40e7-b9f1-0a79ad247b43" LastKnownName="Добавление книги" />
+                <elementDefinition Id="43651544-02c8-436a-857b-674b7970ac42" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="1c3b9e8e-6ef2-4843-af1f-11e0a99434c3" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="bc0eb6f5-e2d3-46f5-9280-d26695d856d3" />
+          </activityFinalNode>
+          <opaqueAction Id="da1de360-57aa-40e7-b9f1-0a79ad247b43" name="Добавление книги" isLeaf="false">
+            <elementDefinition Id="c3c8a6e5-1555-4605-a165-140facd3a215" />
+            <flowNodeTargets>
+              <controlFlow Id="f4a0dcc1-c5d0-437a-bd1b-ec0d95701499" isLeaf="false">
+                <activityFinalNodeMoniker Id="1c3b9e8e-6ef2-4843-af1f-11e0a99434c3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e1ac98de-e502-4b42-ac10-147bedfd77fa" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="3b68e792-b1da-4d8e-9af4-71b43deeacf6" name="ЛАБ5">
+    <elementDefinition Id="8880c9fe-d53c-4af7-84a2-6e80dac3a103" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5ea9d39b-6082-4311-848c-3d5218944233">
+        <profileInstance Id="71748807-29f3-4bf3-8ff7-89120d101bb0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2c25d3f3-f1c2-4f40-88f5-0ebb1ca11b8d">
+        <profileInstance Id="18cae037-025b-44d8-94d9-57d9175507d4" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="a00e1ed9-dc5b-4981-8525-fd3ef8f6dd17" name="Баланс" linkedPackageId="fafdc3d1-0aa2-4ee4-8949-354e09cf29d7" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="a862505e-29e3-45b6-a57b-56e996a5745a" name="Баланс" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f6308762-9b5a-43ce-8581-c2c6d026b132" />
+        <nodes>
+          <initialNode Id="2ecae4a3-856f-4777-90ac-0a5d11371732" name="Initial1" isLeaf="false">
+            <elementDefinition Id="eda759ef-624e-4fdb-ac4e-902d7932595f" />
+            <flowNodeTargets>
+              <controlFlow Id="18f5805f-6da5-42a4-95b7-e1a0029cb45e" isLeaf="false">
+                <opaqueActionMoniker Id="f2a1de9d-4bc0-4e83-8d69-2b9abe188615" LastKnownName="Открытие формы отчёта" />
+                <elementDefinition Id="7e19ee4d-4d1b-4969-91d4-18159257ab0e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="f2a1de9d-4bc0-4e83-8d69-2b9abe188615" name="Открытие формы отчёта" isLeaf="false">
+            <elementDefinition Id="8e0c19fd-6aa8-4875-ab41-92d50fc3eac8" />
+            <flowNodeTargets>
+              <controlFlow Id="4cdf5b00-8b6e-4e5c-8169-b39dc1d5920c" isLeaf="false">
+                <decisionNodeMoniker Id="bd97cd98-caa0-4915-aa35-1b798b74a26f" LastKnownName="Decision2" />
+                <elementDefinition Id="eb5bb005-c9f3-4570-8a4b-fd127d5d99c1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7bc8cc03-24fb-4edf-897e-5315a79e7241" name="Открытие карточки редактирования платежа" isLeaf="false">
+            <elementDefinition Id="b22b514a-e13d-4107-a15f-1d86368892a4" />
+            <flowNodeTargets>
+              <controlFlow Id="075b4729-5027-466a-9fb6-13a8acdb6b03" isLeaf="false">
+                <opaqueActionMoniker Id="570bdea3-0f71-478f-9d62-368e0a126c6a" LastKnownName="Изменение полей" />
+                <elementDefinition Id="fef99bdd-35cc-426a-bac2-0adbb56063ab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="570bdea3-0f71-478f-9d62-368e0a126c6a" name="Изменение полей" isLeaf="false">
+            <elementDefinition Id="6d3d0c41-f311-47fe-896d-6ffa8a9666aa" />
+            <flowNodeTargets>
+              <controlFlow Id="f40bb7f6-c3d9-4de6-8f49-9ab5e5f2df30" isLeaf="false">
+                <decisionNodeMoniker Id="9b649e1d-3dc6-40a0-9721-cc3bd984ed24" LastKnownName="Decision1" />
+                <elementDefinition Id="7656b82d-ddc6-4174-881c-7dce4be56cbb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d0f5ee56-e151-4eba-871f-813911217fba" name="Выбор платежа" isLeaf="false">
+            <elementDefinition Id="6e427941-8548-41e3-baa5-6eb39ca7387c" />
+            <flowNodeTargets>
+              <controlFlow Id="e89157e2-da84-43d8-bcf0-90a72a4ba5ca" guard="Двойной клик" isLeaf="false">
+                <opaqueActionMoniker Id="7bc8cc03-24fb-4edf-897e-5315a79e7241" LastKnownName="Открытие карточки редактирования платежа" />
+                <elementDefinition Id="63386de6-954c-46ab-bb0c-38e7340bd1dc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="9b649e1d-3dc6-40a0-9721-cc3bd984ed24" name="Decision1" isLeaf="false">
+            <elementDefinition Id="388205a4-5fdb-4ded-bb4d-84ff94b32a3f" />
+            <flowNodeTargets>
+              <controlFlow Id="45fdce61-d3f9-4db0-beaa-302dbe1d9455" guard="Отмена" isLeaf="false">
+                <opaqueActionMoniker Id="f2a1de9d-4bc0-4e83-8d69-2b9abe188615" LastKnownName="Открытие формы отчёта" />
+                <elementDefinition Id="dbf9856e-202c-4f1d-aa9c-2c0b43ed0339" />
+              </controlFlow>
+              <controlFlow Id="57abed36-3167-420b-988f-cfd30265a9f9" guard="ОК" isLeaf="false">
+                <opaqueActionMoniker Id="645e2d45-d928-4bde-a997-92482e9c5721" LastKnownName="Сохранение платежа" />
+                <elementDefinition Id="fd6c2034-776a-4abb-ad8c-f7d365c4bf68" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="645e2d45-d928-4bde-a997-92482e9c5721" name="Сохранение платежа" isLeaf="false">
+            <elementDefinition Id="17e18c97-822d-4702-92b9-b93d5a85b608" />
+            <flowNodeTargets>
+              <controlFlow Id="23ce5059-ba23-40ee-847b-d2d39e6c77b0" isLeaf="false">
+                <opaqueActionMoniker Id="f2a1de9d-4bc0-4e83-8d69-2b9abe188615" LastKnownName="Открытие формы отчёта" />
+                <elementDefinition Id="b2eb7303-ac24-4de6-8b5a-625213d15aa8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="bd97cd98-caa0-4915-aa35-1b798b74a26f" name="Decision2" isLeaf="false">
+            <elementDefinition Id="844d4b9f-1f45-45d3-bb59-9745cceec3aa" />
+            <flowNodeTargets>
+              <controlFlow Id="31612d55-49eb-4269-9b07-7dc859221436" isLeaf="false">
+                <opaqueActionMoniker Id="d0f5ee56-e151-4eba-871f-813911217fba" LastKnownName="Выбор платежа" />
+                <elementDefinition Id="59222166-d4d7-4fec-b95f-6e982410cc1f" />
+              </controlFlow>
+              <controlFlow Id="85ca28b5-8f59-4ef5-ab31-75231ffe2f05" isLeaf="false">
+                <opaqueActionMoniker Id="0f01b2f8-81dc-4054-be60-538eb5784bf3" LastKnownName="Расчитать баланс" />
+                <elementDefinition Id="7678d774-08af-425d-a0d8-6893e9eeab45" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="0f01b2f8-81dc-4054-be60-538eb5784bf3" name="Расчитать баланс" isLeaf="false">
+            <elementDefinition Id="bb52e118-ce94-45c5-8c9c-f12906f969dd" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="fafdc3d1-0aa2-4ee4-8949-354e09cf29d7" name="ЛАБ5">
+    <elementDefinition Id="8880c9fe-d53c-4af7-84a2-6e80dac3a103" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a21fea87-59cb-4bbb-9338-bddd88c75c89">
+        <profileInstance Id="8a5aeb18-ea29-465f-b398-659399bcc666" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1a1665da-ebec-48f0-bd07-689a261376f8">
+        <profileInstance Id="c45bc37b-086e-4d3a-a012-32f37bf0836c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

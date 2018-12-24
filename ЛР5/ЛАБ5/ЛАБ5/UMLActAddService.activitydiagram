@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b567dc4c-139c-45b1-89d9-6c0a0e40d5d6" name="Создание проката" linkedPackageId="ef6ffb54-5097-4241-b3c9-a2a430feed85" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="df782bcc-8375-4eb1-8b59-72040e638e74" name="Создание проката" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="47899260-d289-4905-8cc4-95a367e814bc" />
+        <nodes>
+          <initialNode Id="f2ebbf36-a34c-4aca-a7b8-6c6a5ea5e3a4" name="Initial1" isLeaf="false">
+            <elementDefinition Id="94040f85-404e-4f08-85ba-be5a86b30d02" />
+            <flowNodeTargets>
+              <controlFlow Id="cc8b3fa7-f01d-4d9b-800c-32720c64c8e8" isLeaf="false">
+                <opaqueActionMoniker Id="1f500f19-1577-4ad7-8559-558a5c26fcfb" LastKnownName="Форма добавления проката " />
+                <elementDefinition Id="04912946-4a7f-49cc-80b7-aaddc1b9c610" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="1f500f19-1577-4ad7-8559-558a5c26fcfb" name="Форма добавления проката " isLeaf="false">
+            <elementDefinition Id="aa0d6a2a-0a29-46dd-91dd-6ee486cda4ee" />
+            <flowNodeTargets>
+              <controlFlow Id="6cfd5e0e-0dc4-4644-9c25-9c94e66c69a6" isLeaf="false">
+                <opaqueActionMoniker Id="bee06e10-ad7f-41df-81cf-480063498ed3" LastKnownName="Выбор читателя" />
+                <elementDefinition Id="8831ce4a-2208-4c5d-bf98-b881abd12039" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bee06e10-ad7f-41df-81cf-480063498ed3" name="Выбор читателя" isLeaf="false">
+            <elementDefinition Id="eab260fd-d92e-4766-b110-9bf420f169c2" />
+            <flowNodeTargets>
+              <controlFlow Id="61977e61-a104-4722-89d6-e7bdb67ffd26" isLeaf="false">
+                <opaqueActionMoniker Id="5a78952f-4fd7-41ca-9410-9e61abc18c11" LastKnownName="Поиск скидки" />
+                <elementDefinition Id="1994601d-9c7b-407b-a7b0-ccc326331018" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4314e9de-8307-4967-97b2-e2bb0aa62ecf" name="Выбор даты начала и конца проката" isLeaf="false">
+            <elementDefinition Id="7edc3e0f-646f-4cf8-ae9f-450b6aed97d0" />
+            <flowNodeTargets>
+              <controlFlow Id="ebab22cc-b889-4142-aafb-b0771aa0f095" isLeaf="false">
+                <opaqueActionMoniker Id="961b9d9c-ac9f-4310-ae9d-e2f4c7ea25ab" LastKnownName="Выбор книги" />
+                <elementDefinition Id="9a92ce68-12bf-41c0-bc48-ffecb4ec6ad2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="30a0a700-f0dc-455f-b4df-e302f60446bc" name="Выбор работника" isLeaf="false">
+            <elementDefinition Id="b150a237-52a7-4ff4-b133-50a425138ea0" />
+            <flowNodeTargets>
+              <controlFlow Id="b80e4e01-0104-401f-9116-0cfdbf35a539" isLeaf="false">
+                <opaqueActionMoniker Id="4314e9de-8307-4967-97b2-e2bb0aa62ecf" LastKnownName="Выбор даты начала и конца проката" />
+                <elementDefinition Id="0093327b-90f4-486e-b834-3076c16957cd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="961b9d9c-ac9f-4310-ae9d-e2f4c7ea25ab" name="Выбор книги" isLeaf="false">
+            <elementDefinition Id="866634b6-b41a-4eb4-b815-8e9db7f5eb42" />
+            <flowNodeTargets>
+              <controlFlow Id="9b67bd5c-1d2b-4060-a2d9-becc9535d64b" isLeaf="false">
+                <decisionNodeMoniker Id="0736629d-b403-461d-8876-f813dd685f66" LastKnownName="Decision2" />
+                <elementDefinition Id="d618acf0-eaad-4f31-bd6f-f29a2ba64543" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5a78952f-4fd7-41ca-9410-9e61abc18c11" name="Поиск скидки" isLeaf="false">
+            <elementDefinition Id="c7aeb9ee-8674-4f63-a1c0-bfeb2c193aec" />
+            <flowNodeTargets>
+              <controlFlow Id="74eb3c4d-eca0-4bbe-babb-3bb0010e8803" isLeaf="false">
+                <opaqueActionMoniker Id="30a0a700-f0dc-455f-b4df-e302f60446bc" LastKnownName="Выбор работника" />
+                <elementDefinition Id="a7e9c8eb-56e2-47fe-9865-a2ceada46241" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="72c74598-3036-4cc5-bc63-0b3964e9d976" name="Оплата" isLeaf="false">
+            <elementDefinition Id="3c2b09ff-e5da-4613-a5be-66364ea30caf" />
+            <flowNodeTargets>
+              <controlFlow Id="68c4467c-5c75-4006-a8d1-29ec6b8ccc26" guard="Создание проката" isLeaf="false">
+                <activityFinalNodeMoniker Id="8545bbc2-3b4a-4537-bfdf-6fbff7bdc4f3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ac3ff308-a9eb-4d13-8cb3-3892ac83f3ed" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="8545bbc2-3b4a-4537-bfdf-6fbff7bdc4f3" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="f2d64aff-3445-4b35-a68c-53acaa37f3af" />
+          </activityFinalNode>
+          <decisionNode Id="0736629d-b403-461d-8876-f813dd685f66" name="Decision2" isLeaf="false">
+            <elementDefinition Id="9d6ceb6e-ad52-44c0-8678-a39e027e6e84" />
+            <flowNodeTargets>
+              <controlFlow Id="ef97a2c7-918b-4feb-93a8-e31cf3dd0f4c" guard="Добавить книгу" isLeaf="false">
+                <opaqueActionMoniker Id="961b9d9c-ac9f-4310-ae9d-e2f4c7ea25ab" LastKnownName="Выбор книги" />
+                <elementDefinition Id="1df70570-f057-44b3-96c1-272d0b21024e" />
+              </controlFlow>
+              <controlFlow Id="13ad2b7a-1d12-428a-828a-fed6590bbafa" guard="ОК" isLeaf="false">
+                <opaqueActionMoniker Id="72c74598-3036-4cc5-bc63-0b3964e9d976" LastKnownName="Оплата" />
+                <elementDefinition Id="384aab96-50e5-466e-89c5-756367dee2dd" />
+              </controlFlow>
+              <controlFlow Id="4a41e758-a7e7-42a9-8a25-edaded893807" guard="Отмена" isLeaf="false">
+                <activityFinalNodeMoniker Id="8545bbc2-3b4a-4537-bfdf-6fbff7bdc4f3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="4a49a6f0-6937-4482-8449-e84731beee10" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ef6ffb54-5097-4241-b3c9-a2a430feed85" name="ЛАБ5">
+    <elementDefinition Id="8880c9fe-d53c-4af7-84a2-6e80dac3a103" />
+    <profileInstances>
+      <packageHasProfileInstances Id="01e411f8-5fcb-4874-942b-df75f21eb897">
+        <profileInstance Id="851b972e-2a39-48f7-8f4e-cabf5fd77729" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c38b4499-5988-4fae-9817-7d7cbc62b354">
+        <profileInstance Id="fe6aa14e-79d7-4608-9bb2-b8fecaa13f17" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

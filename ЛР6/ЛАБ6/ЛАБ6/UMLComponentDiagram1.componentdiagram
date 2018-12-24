@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="9bfb72ff-7f1f-4840-b1ab-f45169d9399c" name="Компоенты" linkedPackageId="59dfbd3a-8582-473e-a4dc-9056028ed534" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="02e5d9d8-ce18-407f-b179-1b541766a25b" name="IUser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="095100ed-f7c4-4dc6-a309-af86694bfd48" />
+        <ownedAttributesInternal>
+          <providedInterface Id="ba7fe2b4-eec0-4db4-81c3-67f762b74369" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="cf8122aa-2aff-4212-81aa-a3bf5a607833" />
+            <type_NamedElement>
+              <interfaceMoniker Id="4159b024-d397-414c-aa50-c5b96af5a3a6" LastKnownName="IUser" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4fa6115a-1c57-4fb5-a654-c0c20def5aa8" name="IService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="141ad86c-9fb9-4edf-96df-dab4a0b724ec" />
+        <ownedAttributesInternal>
+          <providedInterface Id="83a24ef8-d772-4f6a-a21c-60e6abaf1ce0" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="16643e1a-1f72-48ef-a578-6b5ddb983d68" />
+            <type_NamedElement>
+              <interfaceMoniker Id="5a5f112e-b810-4673-ba0c-1b60c7922b56" LastKnownName="IService" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b2e07c38-b3a5-4eba-86ed-189fb88cba25" name="IReader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="579942c7-e9de-40f6-8d80-611ab6a89ebf" />
+        <ownedAttributesInternal>
+          <providedInterface Id="783d5283-7b30-41f2-ada6-2e89d1daf2f4" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ed0ecf48-094e-4c60-985e-add6b5a50d89" />
+            <type_NamedElement>
+              <interfaceMoniker Id="a3242023-6454-4d3e-a108-d2e0b1ff0a55" LastKnownName="IReader" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f1ee7988-42f0-4dd3-a779-3f8f88358044" name="Клиентское приложение" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f123e3c1-abf6-4e01-a247-1b3160bca9ab" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="03514d1f-da78-4fdc-a6c9-0d47e26ce6c4" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="e8791c52-d0db-490c-a8bc-495069ae4792" />
+            <suppliersInternal>
+              <dependency Id="0b7ffc74-8d6f-4f1d-a4ae-40a99031e81b">
+                <providedInterfaceMoniker Id="83a24ef8-d772-4f6a-a21c-60e6abaf1ce0" LastKnownName="Port1" />
+                <elementDefinition Id="050c1164-f80e-4d8a-9032-808921ca414e" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="5f0545ce-aaba-4536-9ffe-ba1862f9cd72" LastKnownName="IService" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="b39b2249-cb7a-476d-ae12-cc97420c2bee" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ef39ab52-922a-493b-a3d3-15991631639c" />
+            <suppliersInternal>
+              <dependency Id="483e0591-3beb-4ca7-86fe-f98c72f60e66">
+                <providedInterfaceMoniker Id="ade6c879-cc06-4e34-9dc2-e1ccb12ff2a5" LastKnownName="Port1" />
+                <elementDefinition Id="104259ab-667f-4a14-a44d-1f8a63d58b00" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="7e8bb7ea-cb79-4042-9bab-47564e5c6199" LastKnownName="IAuthor" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="426dc1cb-ebdb-4652-bb82-a90192a9a470" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="6664b204-36e1-47c5-bb4b-538b53cb3bb1" />
+            <suppliersInternal>
+              <dependency Id="8ec6218c-fa66-4ca1-8ab0-f354d8970f7b">
+                <providedInterfaceMoniker Id="2798854a-0343-4e9a-9b03-b03b36391418" LastKnownName="Port1" />
+                <elementDefinition Id="8e6cf997-12a9-446d-a248-6a4f7679f885" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="19ad9fe7-4f26-4975-b330-25b02447ed67" LastKnownName="IFine" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="b44d1c6f-0d6c-44ab-802e-a2e176bf3884" name="Port4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="67c04ffb-dbc7-4ec8-a2ae-5ec1aa08c786" />
+            <suppliersInternal>
+              <dependency Id="800e5b10-e9fd-49f7-9fd3-4256a491060c">
+                <providedInterfaceMoniker Id="ee064b11-4339-4f48-ad1f-08b6684c98a7" LastKnownName="Port1" />
+                <elementDefinition Id="56e49166-53c9-4e75-bf9d-9ef978b51ddc" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="078d5210-4140-4654-b587-08542c5d9252" LastKnownName="IBook" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="5262e662-0af8-4cfa-b81c-8d4a4858ef03" name="Port5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="be52f43c-84a6-4a22-b095-98da161dcc7d" />
+            <suppliersInternal>
+              <dependency Id="89f20f03-be34-4f42-97d2-f58b21945b8b">
+                <providedInterfaceMoniker Id="783d5283-7b30-41f2-ada6-2e89d1daf2f4" LastKnownName="Port1" />
+                <elementDefinition Id="db81f03b-4aeb-4278-b837-9429eed8315f" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="c8d16a80-0221-4df4-9561-f3c56747986d" LastKnownName="IReader" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="61c2a027-cfc8-4bf7-9fd3-0b39d87ea28b" name="Port6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="55602c43-293d-4bc4-b88e-70b90aa9e6c4" />
+            <suppliersInternal>
+              <dependency Id="2e711443-df60-451d-80ab-81469bad3e92">
+                <providedInterfaceMoniker Id="ba7fe2b4-eec0-4db4-81c3-67f762b74369" LastKnownName="Port1" />
+                <elementDefinition Id="9ff5ae01-a035-44fa-b4b3-3eda2ae527d3" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="fe3cc305-0ba7-4433-b3f9-e01778298ca3" LastKnownName="IUser" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e1f8ebdd-caf3-4380-8d92-89245ea1c617" name="IBook" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="19a1900b-f1aa-4cdc-b41e-4e9e6e0506a9" />
+        <ownedAttributesInternal>
+          <providedInterface Id="ee064b11-4339-4f48-ad1f-08b6684c98a7" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="413ff027-fcdc-4c7b-bfa3-6f52d54826d2" />
+            <type_NamedElement>
+              <interfaceMoniker Id="5aace71f-06be-4631-ae28-0e206c536370" LastKnownName="IBook" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="08a62d99-aedd-41c7-90cd-cbcc4940abc8" name="IAuthor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e2926c3c-5fd7-4d40-b6f9-1ab099d4fa0b" />
+        <ownedAttributesInternal>
+          <providedInterface Id="ade6c879-cc06-4e34-9dc2-e1ccb12ff2a5" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="2a12102f-095e-4382-9dd5-94a024ee2f91" />
+            <type_NamedElement>
+              <interfaceMoniker Id="15cb8dcd-9642-4750-b830-859e8d785cbb" LastKnownName="IAuthor" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="569cfce4-5e73-4023-9979-6189df703e86" name="IFine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a060dbe7-612c-4aed-a6af-a8221544d722" />
+        <ownedAttributesInternal>
+          <providedInterface Id="2798854a-0343-4e9a-9b03-b03b36391418" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="35ad8fa2-5487-41ba-81fa-694e1e252a7d" />
+            <type_NamedElement>
+              <interfaceMoniker Id="b2c4e1e7-3fbe-461e-9e25-628e63a3b079" LastKnownName="IFine" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="5a5f112e-b810-4673-ba0c-1b60c7922b56" name="IService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="444263b3-98b7-4f05-80e5-055c6217dcf4" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="5f0545ce-aaba-4536-9ffe-ba1862f9cd72" name="IService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6677a76b-cb71-4494-a1f5-dd1731a82ea7" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="7e8bb7ea-cb79-4042-9bab-47564e5c6199" name="IAuthor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e10b21d-8389-4469-a748-7ab9ed2f7dc8" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="19ad9fe7-4f26-4975-b330-25b02447ed67" name="IFine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="26205b68-ff7d-4884-bed1-5e4a37bc580f" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="078d5210-4140-4654-b587-08542c5d9252" name="IBook" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a2d0229-cbce-472f-8d51-647871ad36dd" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="c8d16a80-0221-4df4-9561-f3c56747986d" name="IReader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf03caf8-8b45-4efe-b292-8b5e78072062" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="fe3cc305-0ba7-4433-b3f9-e01778298ca3" name="IUser" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da724b50-58e1-41ad-893d-0c417ea055fb" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="15cb8dcd-9642-4750-b830-859e8d785cbb" name="IAuthor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="efa1e7a7-5cc9-4dca-b071-fc49784008fd" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="b2c4e1e7-3fbe-461e-9e25-628e63a3b079" name="IFine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="82acaa5b-22b7-4cdc-acc3-1783233c90fb" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="5aace71f-06be-4631-ae28-0e206c536370" name="IBook" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="17550d26-4927-4af0-b81c-31d660380f38" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="4159b024-d397-414c-aa50-c5b96af5a3a6" name="IUser" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8bc3694c-68c7-4bf0-a574-71dc484606c4" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="a3242023-6454-4d3e-a108-d2e0b1ff0a55" name="IReader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b402048d-88c2-426c-a9f8-a3c509586b6c" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="59dfbd3a-8582-473e-a4dc-9056028ed534" name="ЛАБ6">
+    <elementDefinition Id="b091db85-5e73-4a5e-9e9f-9bfc09f84341" />
+    <profileInstances>
+      <packageHasProfileInstances Id="625dfdcd-72b9-468c-ac2b-eeb65fc684c4">
+        <profileInstance Id="ec9fcfcf-d92e-4837-8051-a1b32cf8cd28" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dfb8ec0b-c0c0-4af8-8948-deb336e4acc9">
+        <profileInstance Id="ac1878a8-9b3f-474f-9efc-fd9ef79c76cf" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>
